@@ -1,0 +1,7 @@
+.project
+.classpath
+de.tudarmstadt.ukp.wikulu.core/.settings/org.eclipse.core.resources.prefs
+de.tudarmstadt.ukp.wikulu.core/.settings/org.eclipse.jdt.core.prefs
+de.tudarmstadt.ukp.wikulu.core/.settings/org.eclipse.m2e.core.prefs
+de.tudarmstadt.ukp.wikulu.core/.settings/org.eclipse.wst.common.component
+de.tudarmstadt.ukp.wikulu.core/.settings/org.eclipse.wst.common.project.facet.core.xml
