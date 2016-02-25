@@ -1,0 +1,135 @@
+!------- Direct Proxy ------------!
+wikulu.direct_connection=no
+wikulu.proxyLocationHost=http://wikulu:8080
+!----------------------------------!
+
+wikulu.useSSL=no
+
+
+!------- Index properties --------!
+index.targetDirectory=/home/jeeks/Wikulu/Resources/lucene_index
+index.stopwordFile=/stopwords/english_stopwords.txt
+index.directoryType=fs
+
+index.twiki.webName=Wikulu
+index.twiki.excludedPagePrefix=
+index.twiki.login=WiKulu
+index.twiki.pass=wikulu
+
+!----------------------------------!
+!wikulu.targetWikiPlatform=mediawiki
+!wikulu.targetPlatformBaseURL=http://wikulu.ukp.informatik.tu-darmstadt.de/
+!wikulu.targetPlatformWikiURL=dipf/
+!wikulu.targetPlatformAPIURL=dipf/api.php
+
+!-------- VM Lokal (TWiki) ----------!
+!wikulu.targetWikiPlatform=twiki
+!wikulu.targetPlatformBaseURL=http://wikulu/
+!wikulu.targetPlatformWikiURL=twiki/bin/view/
+!wikulu.targetPlatformAPIURL=twiki/bin/rest/WikuluPlugin/
+!wikisniffer.mainURL = http://wikulu.ukp.informatik.tu-darmstadt.de/
+!wikisniffer.viewURL = twiki/bin/view/
+!wikisniffer.apiURL = twiki/bin/rest/WikuluPlugin/
+!wikisniffer.wikiSyntax = TWiki
+!wikisniffer.monitorNode = #patternMainContents
+!wikisniffer.monitorPath = /twiki/bin/view/
+!wikisniffer.titleNode = h1
+!wikisniffer.directProxy = yes
+!----------------------------------!
+
+!-------- WikuluVM Online-Modus(TWiki) ----------!
+!wikulu.targetWikiPlatform=twiki
+!wikulu.targetPlatformBaseURL=http://wikulu.ukp.informatik.tu-darmstadt.de/
+!wikulu.targetPlatformWikiURL=twiki/bin/view/
+!wikulu.targetPlatformAPIURL=twiki/bin/rest/WikuluPlugin/
+!wikisniffer.mainURL = http://wikulu.ukp.informatik.tu-darmstadt.de/
+!wikisniffer.viewURL = twiki/bin/view/
+!wikisniffer.apiURL = twiki/bin/rest/WikuluPlugin/
+!wikisniffer.wikiSyntax = TWiki
+!wikisniffer.monitorNode = #patternMainContents
+!wikisniffer.monitorPath = /twiki/bin/view/
+!wikisniffer.titleNode = h1
+!wikisniffer.directProxy = yes
+!----------------------------------!
+
+!---------- WIKIPEDIA -------------!
+!wikulu.targetWikiPlatform=mediawiki
+!wikulu.targetPlatformBaseURL=http://en.wikipedia.org/
+!wikulu.targetPlatformAPIURL=w/api.php
+!wikulu.targetPlatformWikiURL=wiki/
+!wikisniffer.mainURL = http://en.wikipedia.org/wiki/
+!wikisniffer.apiURL = http://en.wikipedia.org/w/api.php
+!wikisniffer.viewURL = http://en.wikipedia.org/wiki/
+!wikisniffer.wikiSyntax = MediaWiki
+!wikisniffer.monitorNode = #bodyContent
+!wikisniffer.monitorPath = /wiki/
+!wikisniffer.titleNode = #firstHeading
+!wikisniffer.directProxy = yes
+!----------------------------------!
+
+!-------- DIPF(MediaWiki) ----------!
+!wikulu.targetWikiPlatform=mediawiki
+!wikulu.targetPlatformBaseURL=http://wiki.bildungsserver.de/
+!wikulu.targetPlatformWikiURL=
+!wikulu.targetPlatformAPIURL=api.php
+!wikisniffer.mainURL = http://wiki.bildungsserver.de
+!wikisniffer.apiURL = /api.php
+!wikisniffer.viewURL = /index.php
+!wikisniffer.wikiSyntax = MediaWiki
+!wikisniffer.monitorNode = #bodyContent
+!wikisniffer.monitorPath = /index.php/
+!wikisniffer.titleNode = #firstHeading
+!wikisniffer.directProxy = yes
+!----------------------------------!
+
+!-------- Wikulu-DIPF(MediaWiki) ----------!
+wikulu.targetWikiPlatform=mediawiki
+wikulu.targetPlatformBaseURL=http://wikulu.ukp.informatik.tu-darmstadt.de/
+wikulu.targetPlatformWikiURL=dipf/index.php
+wikulu.targetPlatformAPIURL=dipf/api.php
+wikisniffer.mainURL = http://wikulu.ukp.informatik.tu-darmstadt.de
+wikisniffer.apiURL = /dipf/api.php
+wikisniffer.viewURL = /dipf/index.php/
+wikisniffer.wikiSyntax = MediaWiki
+wikisniffer.monitorNode = #bodyContent
+wikisniffer.monitorPath = /dipf/index.php/
+wikisniffer.titleNode = #firstHeading
+wikisniffer.directProxy = no
+!----------------------------------!
+
+!-------- Maggie(TWiki) ----------!
+!wikulu.targetWikiPlatform=twiki
+!wikulu.targetPlatformBaseURL=https://maggie.tk.informatik.tu-darmstadt.de/
+!wikulu.targetPlatformWikiURL=wiki/bin/view
+!wikulu.targetPlatformAPIURL=wiki/bin/rest/WikuluPlugin/
+!----------------------------------!
+
+
+!wikulu.match.balance=0.3f
+!wikulu.match.threshold=0.6f
+wikulu.match.balance=0.1f
+wikulu.match.threshold=0.5f
+
+wikulu.keyphrases.count=20
+wikulu.simpleAdapter=yes
+
+!---- General Settings for WikiSniffer ----!
+wikisniffer.enableExtraSummary = false
+wikisniffer.enableHeadings = true
+wikisniffer.enableInternalLinks = true
+wikisniffer.enableBacklinks = false
+wikisniffer.enableExternalLinks = true
+wikisniffer.enableImages = true
+wikisniffer.realSummary = true
+
+!-------- (unidentiefied) WikiSniffer properties ----------!
+
+!-------- MrBurns(MediaWiki)-------!
+!wikisniffer.mainURL = http://mrburns.tk.informatik.tu-darmstadt.de
+!wikisniffer.viewURL = /wikipedia_en/index.php
+!wikisniffer.apiURL = /wikipedia_en/api.php
+!wikisniffer.wikiSyntax = MediaWiki
+!wikisniffer.monitorNode = ""
+!wikisniffer.monitorPath = /wikipedia_en/
+!wikisniffer.titleNode = #firstHeading
+!----------------------------------!
