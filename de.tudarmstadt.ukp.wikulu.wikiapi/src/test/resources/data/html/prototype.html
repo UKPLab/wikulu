@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_US" lang="en_US">
+<head>
+<link rel="stylesheet" href="/wiki/pub/TWiki/JQueryPlugin/jquery-all.css" type="text/css" media="all" />
+<script type="text/javascript" src="/wiki/pub/TWiki/JQueryPlugin/jquery-all.js"></script>
+<title> FabianTaminPrototype &lt; Teaching &lt; TWiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="icon" href="/wiki/pub/Teaching/WebPreferences/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/edit/Teaching/FabianTaminPrototype?_T=29 Jul 2009" type="application/x-wiki" title="edit FabianTaminPrototype" />
+<link rel="shortcut icon" href="/wiki/pub/Teaching/WebPreferences/favicon.ico" type="image/x-icon" />
+<meta name="SCRIPTURLPATH" content="/wiki/bin" />
+<meta name="SCRIPTSUFFIX" content="" />
+<meta name="TEXT_JUMP" content="Jump" />
+<meta name="TEXT_SEARCH" content="Search" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<meta name="robots" content="noindex" /><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Teaching/WebRss" />
+<base href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/viewauth/Teaching/FabianTaminPrototype"></base>
+<!--BEHAVIOURCONTRIB--><script type="text/javascript" src="/wiki/pub/TWiki/BehaviourContrib/behaviour.compressed.js"></script>
+<script type="text/javascript" src="/wiki/pub/TWiki/TWikiJavascripts/twikilib.js"></script>
+<script type="text/javascript" src="/wiki/pub/TWiki/TWikiJavascripts/twikiWindow.js"></script>
+<script type="text/javascript" src="/wiki/pub/TWiki/TWikiJavascripts/twikiEvent.js"></script>
+<script type="text/javascript" src="/wiki/pub/TWiki/TWikiJavascripts/twikiHTML.js"></script>
+<script type="text/javascript" src="/wiki/pub/TWiki/TWikiJavascripts/twikiCSS.js"></script>
+<script type="text/javascript" src="/wiki/pub/TWiki/TWikiJavascripts/twikiForm.js"></script>
+<script type="text/javascript" src="/wiki/pub/TWiki/PatternSkin/pattern.js"></script>
+<style type="text/css" media="all">
+@import url('/wiki/pub/TWiki/TWikiTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+#patternTopBar,
+#patternClearHeaderCenter,
+#patternClearHeaderLeft,
+#patternClearHeaderRight,
+#patternTopBarContentsOuter,
+#patternTopBarContents {
+	height:64px; /* top bar height; make room for header columns */
+	overflow:hidden;
+}
+#patternOuter {
+	margin-left:14em;
+}
+#patternLeftBar {
+	width:14em;
+	margin-left:-14em;
+}
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/TWiki/PatternSkin/layout.css');
+@import url('/wiki/pub/TWiki/PatternSkin/style.css');
+@import url('/wiki/pub/TWiki/PatternSkin/colors.css');
+</style>
+<style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .twikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#FF9933;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/TWiki/PatternSkin/TWiki_header.gif); background-repeat:no-repeat;}
+	
+	.patternBookView {
+		border-color:#FF9933;
+	}
+	.patternPreviewPage #patternMain {
+		/* uncomment to set the preview image */
+		/*background-image:url("/wiki/pub/TWiki/PreviewBackground/preview2bg.gif");*/
+	}
+	
+</style><style type="text/css" media="all">
+
+
+
+</style>
+<style type="text/css" media="all">
+	@import url("/wiki/pub/TWiki/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	overflow-x:auto;
+	padding-bottom:expression(this.scrollWidth > this.offsetWidth ? 16 : 0);
+}
+</style>
+<![endif]-->
+<!--[if lte IE 6]> 
+<style type="text/css">
+#patternLeftBar {
+	position:relative; /* IE 5.5 needs this or the contents won't show outside the parent container on print. IE 6.0 needs it only during printable copy! */
+}
+</style><![endif]-->
+<script type="text/javascript" src="/wiki/pub/TWiki/TWikiJavascripts/twikiStyles.js"></script>
+<link rel="stylesheet" type="text/css" href="/wiki/pub/TWiki/SmartEditAddOn/twikismartstyle.css"/>
+<!--TABLEPLUGIN_twikiAttachmentsTable--><style type="text/css" media="all">
+.tableSortIcon img {padding-left:.3em; vertical-align:text-bottom;}
+.twikiTable#twikiAttachmentsTable td {vertical-align:middle;}
+.twikiTable#twikiAttachmentsTable th {vertical-align:middle;}
+.twikiTable#twikiAttachmentsTable td {vertical-align:top;}
+.twikiTable#twikiAttachmentsTable th {background-color:#ffffff;}
+.twikiTable#twikiAttachmentsTable th.twikiSortedCol {background-color:#eeeeee;}
+.twikiTable#twikiAttachmentsTable th {color:#0066cc;}
+.twikiTable#twikiAttachmentsTable th a:link {color:#0066cc;}
+.twikiTable#twikiAttachmentsTable th a:visited {color:#0066cc;}
+.twikiTable#twikiAttachmentsTable th a:link font {color:#0066cc;}
+.twikiTable#twikiAttachmentsTable th a:visited font {color:#0066cc;}
+.twikiTable#twikiAttachmentsTable th a:hover {color:#ffffff;background-color:#0066cc;}
+.twikiTable#twikiAttachmentsTable th a:hover font {color:#ffffff;background-color:#0066cc;}
+.twikiTable#twikiAttachmentsTable tr.twikiTableRowdataBg0 td {background-color:#ffffff;}
+.twikiTable#twikiAttachmentsTable tr.twikiTableRowdataBg0 td.twikiSortedCol {background-color:#f5f5f5;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol0 {text-align:center;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol1 {text-align:left;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol2 {text-align:left;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol3 {text-align:right;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol4 {text-align:left;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol5 {text-align:left;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol6 {text-align:left;}
+.twikiTable#twikiAttachmentsTable td.twikiTableCol7 {text-align:center;}
+</style>
+<!--TAGMEPLUGIN-->
+<style type="text/css" media="all">
+@import url("/wiki/pub/TWiki/TagMePlugin/tagme.css");
+</style>
+
+<!--JQUERYTWISTYPLUGIN_TWISTY--><style type="text/css" media="all">
+@import url("https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/JQueryTwistyPlugin/twist.css");
+</style>
+<script type="text/javascript" src="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/JQueryTwistyPlugin/twist.js"></script>
+<script type="text/javascript" src="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/TWikiJavascripts/twikiPref.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+var styleText = '<style type="text/css" media="all">.twikiMakeVisible{display:inline;}.twikiMakeVisibleInline{display:inline;}.twikiMakeVisibleBlock{display:block;}.twikiMakeHidden{display:none;}</style>';
+document.write(styleText);
+// ]]>
+</script>
+</head>
+<body class="patternViewPage">
+<a name="PageTop"></a>
+<div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath twikiLeft"><a href="/wiki/bin/view/Main/WebHome" class="twikiLink">TWiki</a><span class='twikiSeparator'>&gt;</span><img src="/wiki/pub/TWiki/TWikiDocGraphics/web-bg-small.gif" border="0" alt="" width="13" height="13" style="background-color:#FF9933" />&nbsp;<a href="/wiki/bin/view/Teaching/WebHome">Teaching Web</a><span class='twikiSeparator'>&gt;</span><a href="/wiki/bin/view/Teaching/StudentsList" class="twikiLink">StudentsList</a><span class='twikiSeparator'>&gt;</span><a href="/wiki/bin/view/Teaching/FabianTamin" class="twikiLink">FabianTamin</a><span class='twikiSeparator'>&gt;</span><a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/view/Teaching/FabianTaminPrototype" title='Topic revision: 8 (18 Jun 2009 - 08:35:26)'>FabianTaminPrototype</a> <span class='patternRevInfo'>(18 Jun 2009, <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a>)</span></span><!-- /patternHomePath--><span class="patternToolBar twikiRight"><span><a href='https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/edit/Teaching/FabianTaminPrototype?t=1248882800;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='twikiAccessKey'>E</span>dit</a></span><span><a href='/wiki/bin/attach/Teaching/FabianTaminPrototype' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='twikiAccessKey'>A</span>ttach</a></span></span><!-- /patternToolBar--><br class="twikiClear" /></div><!--/patternTop--><div class="twikiContentHeader"><div class="tagmetags"> Tags: <form name="tagmeshow" action="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/viewauth/Teaching/FabianTaminPrototype" method="post"><span class="tagMeControl"><a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/view/TWiki/TagMeSearch?tag=students;by=">students</a><span class="tagMeVoteCount">1</span><a class="tagmeAction tag_remove" href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tpaction=remove;tag=students;tagmode="><img src="/wiki/pub/TWiki/TagMePlugin/tag_remove.gif" alt="Remove my vote on this tag" title="Remove my vote on this tag" width="11" height="10" align="middle" border="0" /></a></span> <span class="tagMeControl"><a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/view/TWiki/TagMeSearch?tag=Wiki-Sniffer;by=">Wiki-Sniffer</a><span class="tagMeVoteCount">1</span><a class="tagmeAction tag_remove" href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tpaction=remove;tag=Wiki-Sniffer;tagmode="><img src="/wiki/pub/TWiki/TagMePlugin/tag_remove.gif" alt="Remove my vote on this tag" title="Remove my vote on this tag" width="11" height="10" align="middle" border="0" /></a></span> <span class="tagMeControl"><a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/view/TWiki/TagMeSearch?tag=Wikulu;by=">Wikulu</a><span class="tagMeVoteCount">1</span><a class="tagmeAction tag_remove" href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tpaction=remove;tag=Wikulu;tagmode="><img src="/wiki/pub/TWiki/TagMePlugin/tag_remove.gif" alt="Remove my vote on this tag" title="Remove my vote on this tag" width="11" height="10" align="middle" border="0" /></a></span><span class="tagMeControl"><span id="tagMeSelect428"></span><span id="tagmeAddNewButton" style="display:none;"><input type="hidden" name="tpaction" value="add" /><input type="image" src="/wiki/pub/TWiki/TagMePlugin/tag_addnew.gif" class="tag_addnew" name="add" alt="Select tag and add to topic" value="Select tag and add to topic" title="Select tag and add to topic" /></span><script type="text/javascript" language="javascript">
+//<![CDATA[
+function createSelectBox(inText, inElemId) {
+	var selectBox = document.createElement('SELECT');
+	selectBox.name = "tag";
+	selectBox.className = "twikiSelect";
+	document.getElementById(inElemId).appendChild(selectBox);
+	var items = inText.split("#");
+	var i, ilen = items.length;
+	for (i=0; i<ilen; ++i) {
+		selectBox.options[i] = new Option(items[i], items[i]);
+	}
+}
+var text="#admin#dkpro#GettingStarted#hiwi#minutes#NeedsRevision#Outdated#People#publications#resource#teaching#twiki#uima#wikipedia#workflow";
+if (text.length > 0) {createSelectBox(text, "tagMeSelect428"); document.getElementById("tagmeAddNewButton").style.display="inline";}
+//]]>
+</script></span><noscript><a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tagmode=nojavascript">tag this topic</a></noscript> <span class="tagMeControl"><a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/viewauth/TWiki/TagMeCreateNewTag?from=Teaching.FabianTaminPrototype">create new tag</a></span></form> <span class="tagMeNotification"> added tag "students"</span>, <a href="/wiki/bin/view/TWiki/TagMeViewAllTags" class="twikiLink">view all tags</a> </div></div><div class="patternContent"><div class="patternTopic"> <h1><a name="Prototype"></a> Prototype </h1>
+<h2><a name="Open_question"></a> Open question </h2>
+This open questions can also be the question in the user study.
+<p /> <ul>
+<li> How to show link names <ul>
+<li> The used word in the article (what you see in the article)
+</li> <li> The alias name of wiki article (what you see as the link)
+</li> <li> The real name of wiki article (if redirection is necessary, the link name is the article name after redirection)
+</li></ul> 
+</li> <li> How to show the extracted phrases <ul>
+<li> As normal text (not link)
+</li> <li> As link (link uses wiki search)
+</li></ul> 
+</li></ul> 
+<p />
+<h2><a name="Goal"></a> Goal </h2> <ul>
+<li> <strong>User friendliness</strong>: how easy to use the user interface
+</li> <li> <strong>Simplicity</strong>: keep the user interface as simple as possible
+</li> <li> <strong>High learnability</strong>: how easy to learn the interface to accomplish basic task
+</li> <li> <strong>High efficiency</strong>: how quickly the user to accomplish the tasks after learning
+</li> <li> <strong>Lowest errors</strong>: how many errors do users make, how easy is it for users to recover from these errors
+</li> <li> <strong>High memorability</strong>: after a period of non-use, how long does it take the user still remember to use it effectively
+</li> <li> <strong>High satisfaction</strong>: how satisfying is the user interface (for normal users and advance users)
+</li></ul> 
+<p />
+<h2><a name="Guidelines"></a> Guidelines </h2> <ul>
+<li> Offer informative feedback
+</li> <li> Balance user control with automated action
+</li> <li> Reduce short-term memory load <ul>
+<li> Support simple history mechanism
+</li> <li> Integration navigation &amp; search
+</li></ul> 
+</li> <li> Provide shortcuts for skilled users
+</li> <li> Reduce errors; offer simple error handling <ul>
+<li> Avoid empty result sets
+</li> <li> Address the vocabulary problem
+</li> <li> Small details
+</li></ul> 
+</li> <li> Strive for consistency
+</li> <li> Permit easy reversal of actions
+</li> <li> Recognize the importance of aesthetic in design
+</li></ul> 
+<p />
+<h2><a name="Model_of_information_seeking_pro"></a> Model of information seeking process </h2> <ul>
+<li> Iteration of information details (summary length)
+</li> <li> Browsing as information seeking strategy (browsing VS search)
+</li> <li> Integrating navigation with search <ul>
+<li> Categories for navigating &amp; narrowing
+</li> <li> Collapsing &amp; extending contents
+</li> <li> Sorting
+</li></ul> 
+</li> <li> Small history mechanism
+</li></ul> 
+<p />
+<h2><a name="Personalization"></a> Personalization </h2> <ul>
+<li> User-driven customization <ul>
+<li> Manual closing the snippet
+</li> <li> Keeping snippet opened
+</li></ul> 
+</li></ul> 
+<p />
+<h2><a name="To_decide"></a> To decide </h2> <ul>
+<li> How to show link names <ul>
+<li> The used word in the article (what you see in the article)
+</li> <li> The alias name of wiki article (what you see as the link)
+</li> <li> The real name of wiki article (if redirection is necessary, the link name is the article name after redirection)
+</li></ul> 
+</li> <li> How to show the extracted phrases <ul>
+<li> As normal text (not link)
+</li> <li> As link (link uses wiki search)
+</li></ul> 
+</li></ul> 
+<p />
+<h2><a name="Links"></a> Links </h2>
+-- <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> - 27 May 2009 <ul>
+<li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/Model_Guideline.htm" target="_top">Model_Guideline.htm</a>: 2009_0527_19:26 -- Guideline for modelling the prototype
+</li></ul> 
+<p /> <ul>
+<li> prototype alternal <ul>
+<li> 2009_0618_10:21 -- Prototype alternal - sample article: in compact mode (viewing a single article) + minimized sidebar: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_--_prototype_-_C_mode_mini.png" alt="exampli_--_prototype_-_C_mode_mini.png" width='454' height='361' />
+</li> <li> 2009_0618_10:21 -- Prototype alternal - sample article: in compact mode (viewing a single article) + expanded sidebar: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_--_prototype_-_C_mode.png" alt="exampli_--_prototype_-_C_mode.png" width='617' height='361' />
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_C_mode.svg" target="_top">prototype_-_C_mode.svg</a>: 2009_0605_14:16 -- Prototype in compact mode (viewing a single article)
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_V_mode.svg" target="_top">prototype_-_V_mode.svg</a>: 2009_0605_14:16 -- Prototype in visited articles mode (provide history of visited articles in a single page)
+</li></ul> 
+</li></ul> 
+<p /> <ul>
+<li> prototype seider <ul>
+<li> 2009_0615_02:50 -- Prototype seider - sample article: hidden sidebar: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_navis_hidden.png" alt="exampli_---_prototype_-_navis_hidden.png" width='524' height='420' />
+</li> <li> 2009_0615_02:50 -- Prototype seider - sample article: expanded sidebar: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_navis_with_expanded_sidebar.png" alt="exampli_---_prototype_-_navis_with_expanded_sidebar.png" width='698' height='421' />
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_navis.svg" target="_top">prototype_-_navis.svg</a>: 2009_0605_14:30 -- Prototype in single mode (main frame + sidebar); related articles are categorized
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_navis_grouped.svg" target="_top">prototype_-_navis_grouped.svg</a>: 2009_0605_14:30 -- Prototype in single mode (main frame + sidebar); related articles are grouped together
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_navis_redirection.svg" target="_top">prototype_-_navis_redirection.svg</a>: 2009_0605_14:42 -- Prototype in single mode (main frame + sidebar); with redirection title
+</li></ul> 
+</li></ul> 
+<p /> <ul>
+<li> prototype schaltium <ul>
+<li> 2009_0618_10:24 -- Prototype schaltium - sample article: summary: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_schaltium_-_summary_-_mini_expanded.png" alt="exampli_---_prototype_-_schaltium_-_summary_-_mini_expanded.png" width='455' height='320' />
+</li> <li> 2009_0618_10:24 -- Prototype schaltium - sample article: keywords: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_schaltium_-_keywords_-_mini_expanded.png" alt="exampli_---_prototype_-_schaltium_-_keywords_-_mini_expanded.png" width='455' height='320' />
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_summary.svg" target="_top">prototype_-_schaltium_-_summary.svg</a>: 2009_0605_22:55 -- Prototype schaltium - summary mode
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_table_of_contents.svg" target="_top">prototype_-_schaltium_-_table_of_contents.svg</a>: 2009_0605_22:55 -- Prototype schaltium - table of contents mode
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_keywords.svg" target="_top">prototype_-_schaltium_-_keywords.svg</a>: 2009_0605_22:55 -- Prototype schaltium - keywords mode
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_related_articles.svg" target="_top">prototype_-_schaltium_-_related_articles.svg</a>: 2009_0605_22:55 -- Prototype schaltium - related articles mode
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_external_links.svg" target="_top">prototype_-_schaltium_-_external_links.svg</a>: 2009_0605_22:55 -- Prototype schaltium - external links mode
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_tags.svg" target="_top">prototype_-_schaltium_-_tags.svg</a>: 2009_0605_22:55 -- Prototype schaltium - tags mode
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_sniffed_articles.svg" target="_top">prototype_-_schaltium_-_sniffed_articles.svg</a>: 2009_0605_22:55 -- Prototype schaltium - sniffed articles mode
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_related_articles_subber.svg" target="_top">prototype_-_schaltium_-_related_articles_subber.svg</a>: 2009_0610_18:15 -- Prototype schaltium - related_articles with sub navigation
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_summary_-_mini.svg" target="_top">prototype_-_schaltium_-_summary_-_mini.svg</a>: 2009_0610_18:15 -- Prototype schaltium - summary mode (mini version with navigation's arrow)
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_summary_-_mini_expanded.svg" target="_top">prototype_-_schaltium_-_summary_-_mini_expanded.svg</a>: 2009_0610_18:15 -- Prototype schaltium - summary mode (mini version with expanded navigation)
+</li></ul> 
+</li></ul> 
+<p /> <ul>
+<li> prototype heibrideisser <ul>
+<li> 2009_0618_10:28 -- Prototype heibrideisser - sample article: summary minimized footer frame: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_heibrideisser_-_summary_-_mini.png" alt="exampli_---_prototype_-_heibrideisser_-_summary_-_mini.png" width='546' height='320' />
+</li> <li> 2009_0610_18:19 -- Prototype heibrideisser - sample article: summary + keywords: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_heibrideisser_-_summary__keywords.png" alt="exampli_---_prototype_-_heibrideisser_-_summary__keywords.png" width='491' height='394' />
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_table_of_contents__keywords.svg" target="_top">prototype_-_heibrideisser_-_table_of_contents__keywords.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - table of contents + keywords
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__keywords.svg" target="_top">prototype_-_heibrideisser_-_summary__keywords.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + keywords
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__images.svg" target="_top">prototype_-_heibrideisser_-_summary__images.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + images
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__related_articles_-all-.svg" target="_top">prototype_-_heibrideisser_-_summary__related_articles_-all-.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (all)
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__related_articles_-used_by_this-.svg" target="_top">prototype_-_heibrideisser_-_summary__related_articles_-used_by_this-.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (used by this)
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__related_articles_-using_this-.svg" target="_top">prototype_-_heibrideisser_-_summary__related_articles_-using_this-.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (using this)
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__external_links.svg" target="_top">prototype_-_heibrideisser_-_summary__external_links.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + external links
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__tags.svg" target="_top">prototype_-_heibrideisser_-_summary__tags.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + tags
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__sniffed_articles.svg" target="_top">prototype_-_heibrideisser_-_summary__sniffed_articles.svg</a>: 2009_0605_22:55 -- Prototype heibrideisser - summary + sniffed articles
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary.svg" target="_top">prototype_-_heibrideisser_-_summary.svg</a>: 2009_0610_18:19 -- Prototype heibrideisser - summary (hidden footer frame)
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary_-_mini.svg" target="_top">prototype_-_heibrideisser_-_summary_-_mini.svg</a>: 2009_0610_18:19 -- Prototype heibrideisser - summary (hidden footer frame + small window)
+</li> <li> <a href="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_heibrideisser_-_summary__keywords.svg" target="_top">exampli_---_prototype_-_heibrideisser_-_summary__keywords.svg</a>: 2009_0610_18:19 -- Prototype heibrideisser - sample article: summary + keywords
+</li></ul> 
+</li></ul> 
+<p /> <ul>
+<li> starting point: <ul>
+<li> 2009_0618_10:30 -- hovering article's link with schaltium: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/hovering.png" alt="hovering.png" width='733' height='446' />
+</li> <li> 2009_0618_10:30 -- opening schaltium snippet with link's dynamic icon: <br />      <img src="/wiki/pub/Teaching/FabianTaminPrototype/iconing.png" alt="iconing.png" width='734' height='446' />
+</li></ul> 
+</li></ul>  </div><!-- /patternTopic-->
+<div class="twikiContentFooter"></div><div class="twikiAttachments">
+<div class="twistyPlugin twikiMakeVisibleInline">
+ <span id="topicattachmentslistshow" class="twistyRememberSetting twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/wiki/pub/TWiki/TWikiDocGraphics/toggleopen.gif" border="0" alt="" /><span class="twikiLinkLabel twikiUnvisited">Attachments</span></a> </span> <span id="topicattachmentslisthide" class="twistyRememberSetting twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/wiki/pub/TWiki/TWikiDocGraphics/toggleclose.gif" border="0" alt="" /><span class="twikiLinkLabel twikiUnvisited">Attachments</span></a> </span>  </div><!--/twistyPlugin twikiMakeVisibleInline--> <div style="display:inline;" class="twistyPlugin"><div id="topicattachmentslisttoggle" class="twistyRememberSetting twistyContent twikiMakeHidden twistyInited">
+<table summary="Topic attachments" cellspacing="0" id="twikiAttachmentsTable" cellpadding="0" class="twikiTable" rules="rows" border="1"><caption>Topic attachments</caption>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<th bgcolor="#ffffff" valign="middle" class="twikiTableCol0 twikiFirstCol"> <a rel="nofollow" href="/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tag=students;tpaction=add;add.x=7;add.y=7;sortcol=0;table=1;up=0#sorted_table" title="Sort by this column"><font color="#0066cc">I</font></a> </th>
+			<th bgcolor="#ffffff" valign="middle" class="twikiTableCol1"> <a rel="nofollow" href="/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tag=students;tpaction=add;add.x=7;add.y=7;sortcol=1;table=1;up=0#sorted_table" title="Sort by this column"><font color="#0066cc">Attachment</font></a> </th>
+			<th bgcolor="#ffffff" valign="middle" class="twikiTableCol2"> <a rel="nofollow" href="/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tag=students;tpaction=add;add.x=7;add.y=7;sortcol=2;table=1;up=0#sorted_table" title="Sort by this column"><font color="#0066cc">Action</font></a> </th>
+			<th bgcolor="#ffffff" valign="middle" class="twikiTableCol3"> <a rel="nofollow" href="/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tag=students;tpaction=add;add.x=7;add.y=7;sortcol=3;table=1;up=0#sorted_table" title="Sort by this column"><font color="#0066cc">Size</font></a> </th>
+			<th bgcolor="#ffffff" valign="middle" class="twikiTableCol4"> <a rel="nofollow" href="/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tag=students;tpaction=add;add.x=7;add.y=7;sortcol=4;table=1;up=0#sorted_table" title="Sort by this column"><font color="#0066cc">Date</font></a> </th>
+			<th bgcolor="#ffffff" valign="middle" class="twikiTableCol5"> <a rel="nofollow" href="/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tag=students;tpaction=add;add.x=7;add.y=7;sortcol=5;table=1;up=0#sorted_table" title="Sort by this column"><font color="#0066cc">Who</font></a> </th>
+			<th bgcolor="#ffffff" valign="middle" class="twikiTableCol6 twikiLastCol"> <a rel="nofollow" href="/wiki/bin/viewauth/Teaching/FabianTaminPrototype?tag=students;tpaction=add;add.x=7;add.y=7;sortcol=6;table=1;up=0#sorted_table" title="Sort by this column"><font color="#0066cc">Comment</font></a> </th>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="html" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/html.gif" height="16" border="0" /><span class="twikiHidden">htm</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/Model_Guideline.htm">Model_Guideline.htm</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=Model_Guideline.htm;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 36.9&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">27 May 2009 - 17:33</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0527_19:26 -- Guideline for modelling the prototype </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_heibrideisser_-_summary_-_mini.png">exampli_---_prototype_-_heibrideisser_-_summary_-_mini.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_---_prototype_-_heibrideisser_-_summary_-_mini.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 87.9&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">18 Jun 2009 - 08:29</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0618_10:28 -- Prototype heibrideisser - sample article: summary minimized footer frame </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_heibrideisser_-_summary__keywords.png">exampli_---_prototype_-_heibrideisser_-_summary__keywords.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_---_prototype_-_heibrideisser_-_summary__keywords.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 111.2&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">10 Jun 2009 - 16:27</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0610_18:19 -- Prototype heibrideisser - sample article: summary + keywords </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_navis_hidden.png">exampli_---_prototype_-_navis_hidden.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_---_prototype_-_navis_hidden.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 111.3&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:59</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype seider - sample article: hidden sidebar </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_navis_with_expanded_sidebar.png">exampli_---_prototype_-_navis_with_expanded_sidebar.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_---_prototype_-_navis_with_expanded_sidebar.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 68.9&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:59</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype seider - sample article: expanded sidebar </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_schaltium_-_keywords_-_mini_expanded.png">exampli_---_prototype_-_schaltium_-_keywords_-_mini_expanded.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_---_prototype_-_schaltium_-_keywords_-_mini_expanded.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 39.2&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">18 Jun 2009 - 08:25</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0618_10:24 -- Prototype schaltium - sample article: keywords </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_---_prototype_-_schaltium_-_summary_-_mini_expanded.png">exampli_---_prototype_-_schaltium_-_summary_-_mini_expanded.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_---_prototype_-_schaltium_-_summary_-_mini_expanded.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 88.6&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">18 Jun 2009 - 08:25</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0618_10:24 -- Prototype schaltium - sample article: summary </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_--_prototype_-_C_mode.png">exampli_--_prototype_-_C_mode.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_--_prototype_-_C_mode.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 116.0&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">18 Jun 2009 - 08:23</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0618_10:21 -- Prototype alternal - sample article: in compact mode (viewing a single article) + expanded sidebar </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/exampli_--_prototype_-_C_mode_mini.png">exampli_--_prototype_-_C_mode_mini.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=exampli_--_prototype_-_C_mode_mini.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 94.7&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">18 Jun 2009 - 08:23</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0618_10:21 -- Prototype alternal - sample article: in compact mode (viewing a single article) + minimized sidebar </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/hovering.png">hovering.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=hovering.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 107.8&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">18 Jun 2009 - 08:30</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> hovering article's link with schaltium </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="png" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/png.gif" height="16" border="0" /><span class="twikiHidden">png</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/iconing.png">iconing.png</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=iconing.png;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 112.8&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">18 Jun 2009 - 08:32</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0618_10:30 -- opening schaltium snippet with link's dynamic icon </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_C_mode.svg">prototype_-_C_mode.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_C_mode.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 21.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:51</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype in compact mode (viewing a single article) </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_V_mode.svg">prototype_-_V_mode.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_V_mode.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 32.5&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:52</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype in visited articles mode (provide history of visited articles in a single page) </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary.svg">prototype_-_heibrideisser_-_summary.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 53.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">10 Jun 2009 - 16:19</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0610_18:19 -- Prototype heibrideisser - summary (hidden footer frame) </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary_-_mini.svg">prototype_-_heibrideisser_-_summary_-_mini.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary_-_mini.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 53.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">10 Jun 2009 - 16:20</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0610_18:19 -- Prototype heibrideisser - summary (hidden footer frame + small window) </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__external_links.svg">prototype_-_heibrideisser_-_summary__external_links.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__external_links.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 21:03</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype heibrideisser - summary + external links </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__images.svg">prototype_-_heibrideisser_-_summary__images.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__images.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.3&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 21:01</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype heibrideisser - summary + images </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__keywords.svg">prototype_-_heibrideisser_-_summary__keywords.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__keywords.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.3&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:54</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype heibrideisser - summary + keywords </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__related_articles_-all-.svg">prototype_-_heibrideisser_-_summary__related_articles_-all-.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__related_articles_-all-.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.3&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 21:01</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (all) </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__related_articles_-used_by_this-.svg">prototype_-_heibrideisser_-_summary__related_articles_-used_by_this-.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__related_articles_-used_by_this-.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 21:14</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (used by this) </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__related_articles_-using_this-.svg">prototype_-_heibrideisser_-_summary__related_articles_-using_this-.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__related_articles_-using_this-.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 21:14</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (using this) </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__sniffed_articles.svg">prototype_-_heibrideisser_-_summary__sniffed_articles.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__sniffed_articles.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 21:04</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype heibrideisser - summary + sniffed articles </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_summary__tags.svg">prototype_-_heibrideisser_-_summary__tags.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_summary__tags.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 21:04</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype heibrideisser - summary + tags </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_heibrideisser_-_table_of_contents__keywords.svg">prototype_-_heibrideisser_-_table_of_contents__keywords.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_heibrideisser_-_table_of_contents__keywords.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 55.3&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:54</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype heibrideisser - table of contents + keywords </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_navis.svg">prototype_-_navis.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_navis.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 33.2&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:55</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype in single mode (main frame + sidebar); related articles are categorized </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_navis_grouped.svg">prototype_-_navis_grouped.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_navis_grouped.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 31.4&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:56</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype in single mode (main frame + sidebar); related articles are grouped together </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_navis_redirection.svg">prototype_-_navis_redirection.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_navis_redirection.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 34.7&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:56</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype in single mode (main frame + sidebar); with redirection title </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_external_links.svg">prototype_-_schaltium_-_external_links.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_external_links.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 40.1&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 20:55</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype schaltium - external links mode </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_keywords.svg">prototype_-_schaltium_-_keywords.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_keywords.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 40.1&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 20:54</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype schaltium - keywords mode </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_related_articles.svg">prototype_-_schaltium_-_related_articles.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_related_articles.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 40.1&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 20:55</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype schaltium - related articles mode </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_related_articles_subber.svg">prototype_-_schaltium_-_related_articles_subber.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_related_articles_subber.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 38.9&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:56</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype schaltium - related_articles with sub navigation </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_sniffed_articles.svg">prototype_-_schaltium_-_sniffed_articles.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_sniffed_articles.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 40.1&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">15 Jun 2009 - 12:56</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0615_02:50 -- Prototype schaltium - sniffed articles mode </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_summary.svg">prototype_-_schaltium_-_summary.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_summary.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 40.0&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 20:51</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype schaltium - summary mode </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_summary_-_mini.svg">prototype_-_schaltium_-_summary_-_mini.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_summary_-_mini.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 39.0&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">10 Jun 2009 - 16:16</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0610_18:15 -- Prototype schaltium - summary mode (mini version with navigation's arrow) </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_summary_-_mini_expanded.svg">prototype_-_schaltium_-_summary_-_mini_expanded.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_summary_-_mini_expanded.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 40.3&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">10 Jun 2009 - 16:17</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0610_18:15 -- Prototype schaltium - summary mode (mini version with expanded navigation </td>
+		</tr>
+		<tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_table_of_contents.svg">prototype_-_schaltium_-_table_of_contents.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_table_of_contents.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3"> 40.1&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4"> <span class="twikiNoBreak">05 Jun 2009 - 20:52</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol"> 2009_0605_22:55 -- Prototype schaltium - table of contents mode </td>
+		</tr>
+		<tr class="twikiTableEven twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
+			<td bgcolor="#ffffff" align="center" valign="top" class="twikiTableCol0 twikiFirstCol twikiLast"> <img width="16" alt="else" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/else.gif" height="16" border="0" /><span class="twikiHidden">svg</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol1 twikiLast"> <a href="/wiki/pub/Teaching/FabianTaminPrototype/prototype_-_schaltium_-_tags.svg">prototype_-_schaltium_-_tags.svg</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol2 twikiLast"> <a href="/wiki/bin/attach/Teaching/FabianTaminPrototype?filename=prototype_-_schaltium_-_tags.svg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td bgcolor="#ffffff" align="right" valign="top" class="twikiTableCol3 twikiLast"> 40.1&nbsp;K </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol4 twikiLast"> <span class="twikiNoBreak">15 Jun 2009 - 12:57</span> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol5 twikiLast"> <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a> </td>
+			<td bgcolor="#ffffff" align="left" valign="top" class="twikiTableCol6 twikiLastCol twikiLast"> 2009_0615_02:50 -- Prototype schaltium - tags mode </td>
+		</tr></table>
+</div></div><!--/twistyPlugin--></div><!--//twikiAttachments--></div><!-- /patternContent-->
+<a name="topic-actions"></a><div class="patternTopicActions"><div class="patternTopicAction"><span class="patternActionButtons"><span><a href='https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/edit/Teaching/FabianTaminPrototype?t=1248882800;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='twikiAccessKey'>E</span>dit</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/attach/Teaching/FabianTaminPrototype' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='twikiAccessKey'>A</span>ttach</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Teaching/FabianTaminPrototype?cover=print;tag=students;tpaction=add;add.x=7;add.y=7' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='twikiAccessKey'>P</span>rint version</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><span><a href='/wiki/bin/rdiff/Teaching/FabianTaminPrototype?type=history' rel='nofollow' title='View total topic history' accesskey='h'><span class='twikiAccessKey'>H</span>istory</a></span>: r8&nbsp;<a rel="nofollow" href="/wiki/bin/rdiff/Teaching/FabianTaminPrototype?rev1=8;rev2=7">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Teaching/FabianTaminPrototype?rev=7">r7</a>&nbsp;<a rel="nofollow" href="/wiki/bin/rdiff/Teaching/FabianTaminPrototype?rev1=7;rev2=6">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Teaching/FabianTaminPrototype?rev=6">r6</a>&nbsp;<a rel="nofollow" href="/wiki/bin/rdiff/Teaching/FabianTaminPrototype?rev1=6;rev2=5">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Teaching/FabianTaminPrototype?rev=5">r5</a>&nbsp;<a rel="nofollow" href="/wiki/bin/rdiff/Teaching/FabianTaminPrototype?rev1=5;rev2=4">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Teaching/FabianTaminPrototype?rev=4">r4</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/oops/Teaching/FabianTaminPrototype?template=backlinksweb' rel='nofollow' title='Search the Teaching Web for topics that link to here' accesskey='b'><span class='twikiAccessKey'>B</span>acklinks</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Teaching/FabianTaminPrototype?raw=on' rel='nofollow' title='View raw text without formatting' accesskey='r'><span class='twikiAccessKey'>R</span>aw View</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://maggie.tk.informatik.tu-darmstadt.de/wiki/bin/edit/Teaching/FabianTaminPrototype?t=1248882800;skin=pattern' rel='nofollow' title='Wysiwyg Edit this topic text' accesskey='w'><span class='twikiAccessKey'>W</span>ysiwyg edit</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/oops/Teaching/FabianTaminPrototype?template=oopsmore&amp;param1=8&amp;param2=8' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='twikiAccessKey'>M</span>ore topic actions</a></span></span></div><!--/patternTopicAction--></div><!--/patternTopicActions--><div class="patternInfo twikiGrayText"><div class="patternRevInfo">Topic revision: r8 - 18 Jun 2009 - 08:35:26 - <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">FabianTamin</a></div><!-- /patternRevInfo--><div class="patternMoved"></div><!-- /patternMoved--></div><!-- /patternInfo-->
+</div><!-- /patternMainContents-->
+</div><!-- /patternMain--><div id="patternLeftBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternLeftBarContents"><div class="patternWebIndicator"> <ul>
+<li> <a href="/wiki/bin/view/Teaching/WebHome" class="twikiCurrentWebHomeLink twikiLink"><img width="16" alt="web-bg-small" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/web-bg-small.gif" height="16" border="0" /> Teaching</a>
+</li></ul> 
+</div>
+<div class="patternLeftBarPersonal">
+Hello <a href="/wiki/bin/view/Main/FabianTamin" class="twikiLink">Fabian Tamin</a><br /> <ul><li class="patternLogOut"><a href="/wiki/bin/view/Teaching/FabianTaminPrototype?logout=1">Log Out</a></li></ul>
+<div class="patternLeftBarPersonalContent">
+<ul><li><a href='/wiki/bin/edit/Main/FabianTaminLeftBar?templatetopic=TWiki.WebLeftBarPersonalTemplate&amp;topicparent=FabianTamin'>Create personal sidebar</a></li></ul>
+</div><!--/patternLeftBarPersonalContent--></div><!--/patternLeftBarPersonal--> <ul>
+<li> <b><a href="/wiki/bin/view/Teaching/WebHome" class="twikiCurrentWebHomeLink twikiLink"> <img width="16" alt="home" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/home.gif" height="16" border="0" /> Teaching Web</a></b>
+</li> <li> <a href="/wiki/bin/view/Teaching/WebTopicCreator?parent=FabianTaminPrototype" target="_top"> <img width="16" alt="newtopic" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/newtopic.gif" height="16" border="0" /> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Teaching/WebTopicList" class="twikiLink"> <img width="16" alt="index" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/index.gif" height="16" border="0" /> Index</a>
+</li> <li> <a href="/wiki/bin/view/Teaching/WebSearch" class="twikiLink"> <img width="16" alt="searchtopic" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/searchtopic.gif" height="16" border="0" /> Search</a>
+</li> <li> <a href="/wiki/bin/view/Teaching/WebChanges" class="twikiLink"> <img width="16" alt="changes" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/changes.gif" height="16" border="0" /> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Teaching/WebNotify" class="twikiLink"> <img width="16" alt="notify" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/notify.gif" height="16" border="0" /> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Teaching/WebStatistics" class="twikiLink"> <img width="16" alt="statistics" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/statistics.gif" height="16" border="0" /> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Teaching/WebPreferences" class="twikiLink"> <img width="16" alt="wrench" align="top" src="/wiki/pub/TWiki/TWikiDocGraphics/wrench.gif" height="16" border="0" /> Preferences</a>
+</li></ul> 
+<p />
+<hr /> <ul>
+<li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/TWiki/WebHome"><img src="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;TWiki</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Teaching/WebHome"><img src="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#FF9933" />&nbsp;Teaching</a></span>
+</li></ul> 
+</div><!-- /patternLeftBarContents--></div><!-- /patternLeftBar-->
+</div><!-- /patternFloatWrap-->
+<div class="clear">&nbsp;</div>
+</div><!-- /patternOuter--></div><!-- /patternWrapper--><div id="patternTopBar"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%; margin-top:12px;">
+<tr><td valign="middle"><span id="twikiLogo" class="twikiImage"><a href="http://TWiki.org/"><img src="https://maggie.tk.informatik.tu-darmstadt.de/wiki/pub/TWiki/TWikiLogos/T-logo-140x40-t.gif" border="0" alt="Powered by TWiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Teaching/FabianTaminPrototype"><input id="jumpFormField" type="text" class="twikiInputField" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="twikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Teaching/WebSearch"><input type="text" class="twikiInputField" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Teaching" /><noscript>&nbsp;<input type="submit" size="5" class="twikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li> <li> 
+</li></ul> 
+</td></tr></table></div></div><!-- /patternTopBar--><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"><span class="twikiRight"> <a href="http://twiki.org/"><img src="/wiki/pub/TWiki/TWikiLogos/T-badge-88x31.gif" alt="This site is powered by the TWiki collaboration platform" width="88" height="31" title="This site is powered by the TWiki collaboration platform" border="0" /></a></span>Copyright &copy; by the contributing authors. All material on this collaboration platform is the property of the contributing authors. <br /> Ideas, requests, problems regarding TWiki? <a href='mailto:hoffart@tk.informatik.tu-darmstadt.de?subject=TWiki%20Feedback%20on%20Teaching.FabianTaminPrototype'>Send feedback</a> </div><!--/patternWebBottomBar--></div><!-- /patternBottomBarContents--></div><!-- /patternBottomBar-->
+</div><!-- /patternPage-->
+</div><!-- /patternPageShadow-->
+</div><!-- /patternScreen-->
+</body></html>

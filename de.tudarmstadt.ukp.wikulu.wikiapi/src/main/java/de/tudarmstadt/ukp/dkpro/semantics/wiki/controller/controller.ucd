@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="controller" size="1008,561" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D313030302057696B694150492F6D6F74797573">
+  <children xsi:type="editmodel:ClassEditModel" name="MediaWikiController" location="375,519" size="172,139" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController" runTimeClassModel="MediaWikiController(Ljava.lang.String;Ljava.lang.String;ZZZZZ),setMainAnalysisEngine(),setWikiSyntax(),setFilteredWikiText(),setWiki()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,90">
+      <children xsi:type="editmodel:MethodEditModel" name="MediaWikiController" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController#MediaWikiController(Ljava.lang.String;Ljava.lang.String;ZZZZZ)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWikiSyntax" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController#setWikiSyntax()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWiki" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController#setWiki()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMainAnalysisEngine" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController#setMainAnalysisEngine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFilteredWikiText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController#setFilteredWikiText()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController" source="//@children.0" target="//@children.3" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,41" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="190,427"/>
+      <bendpoints secondRelativeDimension="0,120" firstRelativeDimension="-170,-1"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/MediaWikiController-Standard::Derive->de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController" source="//@children.0" target="//@children.3" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" location="291,518" size="43,14" automaticRelocationAllowed="false" locationOnWireFromSource="3.0" distanceFromWire="-13.0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,19" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,427"/>
+      <bendpoints secondRelativeDimension="0,96" firstRelativeDimension="-120,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TWikiController" location="375,369" size="142,121" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/TWikiController" runTimeClassModel="TWikiController(Ljava.lang.String;Ljava.lang.String;ZZZZZ),setWikiSyntax(),setFilteredWikiText(),setWiki()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,72">
+      <children xsi:type="editmodel:MethodEditModel" name="TWikiController" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/TWikiController#TWikiController(Ljava.lang.String;Ljava.lang.String;ZZZZZ)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWikiSyntax" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/TWikiController#setWikiSyntax()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWiki" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/TWikiController#setWiki()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFilteredWikiText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/TWikiController#setFilteredWikiText()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/TWikiController-Standard::Derive->de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" location="314,388" size="43,14" automaticRelocationAllowed="false" locationOnWireFromSource="3.0" distanceFromWire="-10.0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,36" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="286,390"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/TWikiController" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.1/@children.1" sourceEnd="//@children.1/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,16" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="286,370"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.3/@sourceConnections.1" name="WikiController" location="375,15" size="286,333" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController" runTimeClassModel="getTheFirstHTMLPart(),getBacklinks(),getDocumentUri(),getWikiText(),getTags(),getWikiSyntax(),getPlainTextForKeyphraseExtraction(),getImages(),getWikiApiUri(),getFilteredWikiTextAsPlainText(),getTheResumptionOfHTMLTextForExtraSummary(),getHeadings(),getInternalLinks(),getExternalLinks(),getRawHTMLPage()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="263,270">
+      <children xsi:type="editmodel:MethodEditModel" name="getWikiSyntax" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getWikiSyntax()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWikiText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getWikiText()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRawHTMLPage" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getRawHTMLPage()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPlainTextForKeyphraseExtraction" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getPlainTextForKeyphraseExtraction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTheFirstHTMLPart" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getTheFirstHTMLPart()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTheResumptionOfHTMLTextForExtraSummary" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getTheResumptionOfHTMLTextForExtraSummary()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFilteredWikiTextAsPlainText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getFilteredWikiTextAsPlainText()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDocumentUri" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getDocumentUri()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWikiApiUri" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getWikiApiUri()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHeadings" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getHeadings()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImages" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getImages()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getInternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getExternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getExternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBacklinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getBacklinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTags" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController#getTags()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.1/@sourceConnections.1 //@children.0/@sourceConnections.0 //@children.0/@sourceConnections.1" name="WikiAbstractionController" location="15,15" size="286,427" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController" runTimeClassModel="getTheFirstHTMLPart(),getBacklinks(),getDocumentUri(),getWikiText(),WikiAbstractionController(Ljava.lang.String;Ljava.lang.String;ZZZZZ),setTextBlockAnalysisEngine(),getTags(),getWikiSyntax(),getPlainTextForKeyphraseExtraction(),getImages(),setWikiSyntax(),getWikiApiUri(),getFilteredWikiTextAsPlainText(),getTheResumptionOfHTMLTextForExtraSummary(),getHeadings(),getInternalLinks(),setMainAnalysisEngine(),getExternalLinks(),setFilteredWikiText(),setWiki(),getRawHTMLPage()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="263,378">
+      <children xsi:type="editmodel:MethodEditModel" name="WikiAbstractionController" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#WikiAbstractionController(Ljava.lang.String;Ljava.lang.String;ZZZZZ)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFilteredWikiText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#setFilteredWikiText()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWikiSyntax" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#setWikiSyntax()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWiki" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#setWiki()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMainAnalysisEngine" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#setMainAnalysisEngine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTextBlockAnalysisEngine" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#setTextBlockAnalysisEngine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWikiSyntax" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getWikiSyntax()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDocumentUri" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getDocumentUri()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWikiApiUri" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getWikiApiUri()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWikiText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getWikiText()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFilteredWikiTextAsPlainText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getFilteredWikiTextAsPlainText()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRawHTMLPage" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getRawHTMLPage()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHeadings" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getHeadings()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImages" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getImages()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBacklinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getBacklinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getExternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getExternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getInternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTags" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getTags()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTheFirstHTMLPart" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getTheFirstHTMLPart()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTheResumptionOfHTMLTextForExtraSummary" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getTheResumptionOfHTMLTextForExtraSummary()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPlainTextForKeyphraseExtraction" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController#getPlainTextForKeyphraseExtraction()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController-Soyatec::Implement->de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Implement»" location="306,163" size="59,14" automaticRelocationAllowed="false" locationOnWireFromSource="-2.9999999999999996" distanceFromWire="11.0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="286,166" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,166"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiController&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.controller/WikiAbstractionController" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.1/@children.1" sourceEnd="//@children.3/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="286,99" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,99"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="-1" showScope="InPackage" properties="wireOptions=4;Product=eUML2;displayOptions=1"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+</editmodel:ClassDiagramEditModel>

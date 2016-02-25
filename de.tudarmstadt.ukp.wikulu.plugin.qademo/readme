@@ -1,0 +1,10 @@
+1. copy the resource package to [DKPRO_HOME]. The resource package 
+   is about 3.3g and can be found in ZZ or SH's pc.
+2. set [DKPRO_HOME] as enviroment variable in Eclipse.
+3. import qa_demo.sql to mysql:  qa_demo.sql can be found
+   at maggie//back/ukp_repository/data_other and also copy 
+   the database wordnetfre and en1M int the resource package
+   to mysql data directory. 
+4. configure the parameters in 
+	de.tudarmstadt.ukp.qa_demo/src/main/resources/conf/Project.properties
+	to your local setting.

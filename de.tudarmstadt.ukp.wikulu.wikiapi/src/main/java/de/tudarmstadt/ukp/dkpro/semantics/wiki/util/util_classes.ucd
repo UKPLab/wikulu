@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="util" size="1501,976" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D313030302057696B694150492F6D6F74797573">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.11/@sourceConnections.0 //@children.16/@sourceConnections.0" name="HTMLTextBlockExtractor" location="1143,275" size="196,81" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLTextBlockExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getHTMLTextBlocks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLTextBlockExtractor#getHTMLTextBlocks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MylynWikiTextTextBlockBuilder" location="600,10" size="242,247" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder">
+    <children xsi:type="editmodel:CompartmentEditModel" size="85,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="blocks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#blocks"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,180">
+      <children xsi:type="editmodel:MethodEditModel" name="beginBlock" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#beginBlock(Lorg.eclipse.mylyn.wikitext.core.parser.DocumentBuilder.BlockType;Lorg.eclipse.mylyn.wikitext.core.parser.Attributes;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="beginHeading" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#beginHeading(ILorg.eclipse.mylyn.wikitext.core.parser.Attributes;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="characters" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#characters(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="charactersUnescaped" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#charactersUnescaped(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="endBlock" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#endBlock()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="endHeading" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#endHeading()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBlocks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#getBlocks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="image" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#image(Lorg.eclipse.mylyn.wikitext.core.parser.Attributes;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lineBreak" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#lineBreak()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="link" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextTextBlockBuilder#link(Lorg.eclipse.mylyn.wikitext.core.parser.Attributes;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.13/@sourceConnections.0 //@children.18/@sourceConnections.0 //@children.19/@sourceConnections.0" name="LinkExtractor" location="286,266" size="132,99" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/LinkExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,36">
+      <children xsi:type="editmodel:MethodEditModel" name="getExternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/LinkExtractor#getExternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/LinkExtractor#getInternalLinks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PlainTextForKeyphrasesExtractionExtractor" location="255,10" size="317,67" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/PlainTextForKeyphrasesExtractionExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="65,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/PlainTextForKeyphrasesExtractionExtractor#getText(Ljava.lang.String;ILjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="HTMLForSummarizationExtractor" location="255,105" size="253,139" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLForSummarizationExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="firstPartOfHTMLText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLForSummarizationExtractor#firstPartOfHTMLText"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="resumptionHTMLText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLForSummarizationExtractor#resumptionHTMLText"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="187,54">
+      <children xsi:type="editmodel:MethodEditModel" name="HTMLForSummarizationExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLForSummarizationExtractor#HTMLForSummarizationExtractor(Lorg.apache.uima.jcas.JCas;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFirstPartOfHTMLText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLForSummarizationExtractor#getFirstPartOfHTMLText()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getResumptionHTMLText" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLForSummarizationExtractor#getResumptionHTMLText()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.10/@sourceConnections.0 //@children.15/@sourceConnections.0" name="BacklinkExtractor" location="497,275" size="153,81" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/BacklinkExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getBacklinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/BacklinkExtractor#getBacklinks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.14/@sourceConnections.0 //@children.20/@sourceConnections.0" name="TagExtractor" location="720,275" size="122,81" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/TagExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getTags" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/TagExtractor#getTags()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.12/@sourceConnections.0 //@children.17/@sourceConnections.0" name="ImageExtractor" location="933,275" size="139,81" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/ImageExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getImages" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/ImageExtractor#getImages()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.9/@sourceConnections.0" name="HeadingExtractor" location="45,275" size="152,81" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HeadingExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getHeadings" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HeadingExtractor#getHeadings()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MylynWikiTextHeadingsBuilder" location="1,405" size="239,139" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextHeadingsBuilder" runTimeClassModel="headings,getHeadings(),endHeading(),characters(Ljava.lang.String;),beginHeading(ILorg.eclipse.mylyn.wikitext.core.parser.Attributes;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="headings" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextHeadingsBuilder#headings"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,72">
+      <children xsi:type="editmodel:MethodEditModel" name="beginHeading" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextHeadingsBuilder#beginHeading(ILorg.eclipse.mylyn.wikitext.core.parser.Attributes;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="characters" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextHeadingsBuilder#characters(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="endHeading" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextHeadingsBuilder#endHeading()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHeadings" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextHeadingsBuilder#getHeadings()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HeadingExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util/MylynWikiTextHeadingsBuilder" source="//@children.9" target="//@children.8" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="75,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MediaWikiBacklinkExtractor" location="464,405" size="220,117" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiBacklinkExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="backlinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiBacklinkExtractor#backlinks"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="160,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MediaWikiBacklinkExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiBacklinkExtractor#MediaWikiBacklinkExtractor(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBacklinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiBacklinkExtractor#getBacklinks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/BacklinkExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiBacklinkExtractor" source="//@children.10" target="//@children.5" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="109,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MediaWikiHTMLTextBlockExtractor" location="1125,405" size="263,99" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiHTMLTextBlockExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="193,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MediaWikiHTMLTextBlockExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiHTMLTextBlockExtractor#MediaWikiHTMLTextBlockExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHTMLTextBlocks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiHTMLTextBlockExtractor#getHTMLTextBlocks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLTextBlockExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiHTMLTextBlockExtractor" source="//@children.11" target="//@children.0" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="97,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MediaWikiImageExtractor" location="900,405" size="206,117" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiImageExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="88,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="images" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiImageExtractor#images"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="149,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MediaWikiImageExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiImageExtractor#MediaWikiImageExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImages" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiImageExtractor#getImages()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/ImageExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiImageExtractor" source="//@children.12" target="//@children.7" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="102,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MediaWikiLinkExtractor" location="255,405" size="193,153" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiLinkExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="externalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiLinkExtractor#externalLinks"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="internalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiLinkExtractor#internalLinks"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,54">
+      <children xsi:type="editmodel:MethodEditModel" name="MediaWikiLinkExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiLinkExtractor#MediaWikiLinkExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getExternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiLinkExtractor#getExternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiLinkExtractor#getInternalLinks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/LinkExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiLinkExtractor" source="//@children.13" target="//@children.2" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="96,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="65,99"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MediaWikiTagExtractor" location="691,405" size="189,117" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiTagExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="75,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="tags" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiTagExtractor#tags"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MediaWikiTagExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiTagExtractor#MediaWikiTagExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTags" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiTagExtractor#getTags()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/TagExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.mediawiki/MediaWikiTagExtractor" source="//@children.14" target="//@children.6" targetEnd="//@children.14/@sourceConnections.0/@children.1" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="60,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TWikiBacklinkExtractor" location="495,586" size="189,135" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiBacklinkExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="backlinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiBacklinkExtractor#backlinks"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,54">
+      <children xsi:type="editmodel:MethodEditModel" name="TWikiBacklinkExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiBacklinkExtractor#TWikiBacklinkExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBacklinkURL" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiBacklinkExtractor#getBacklinkURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBacklinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiBacklinkExtractor#getBacklinks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/BacklinkExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiBacklinkExtractor" source="//@children.15" target="//@children.5" targetEnd="//@children.15/@sourceConnections.0/@children.1" sourceEnd="//@children.15/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="78,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="46,81"/>
+      <bendpoints secondRelativeDimension="30,204" firstRelativeDimension="0,-26"/>
+      <bendpoints secondRelativeDimension="-86,204" firstRelativeDimension="-116,-26"/>
+      <bendpoints secondRelativeDimension="-86,35" firstRelativeDimension="-116,-195"/>
+      <bendpoints secondRelativeDimension="-1,35" firstRelativeDimension="-31,-195"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TWikiHTMLTextBlockExtractor" location="1125,521" size="232,99" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiHTMLTextBlockExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,36">
+      <children xsi:type="editmodel:MethodEditModel" name="TWikiHTMLTextBlockExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiHTMLTextBlockExtractor#TWikiHTMLTextBlockExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHTMLTextBlocks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiHTMLTextBlockExtractor#getHTMLTextBlocks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/HTMLTextBlockExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiHTMLTextBlockExtractor" source="//@children.16" target="//@children.0" targetEnd="//@children.16/@sourceConnections.0/@children.1" sourceEnd="//@children.16/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="116,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,81"/>
+      <bendpoints secondRelativeDimension="29,157" firstRelativeDimension="0,-8"/>
+      <bendpoints secondRelativeDimension="-92,158" firstRelativeDimension="-121,-7"/>
+      <bendpoints secondRelativeDimension="-92,34" firstRelativeDimension="-121,-131"/>
+      <bendpoints secondRelativeDimension="0,34" firstRelativeDimension="-29,-131"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TWikiImageExtractor" location="915,543" size="175,117" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiImageExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="88,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="images" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiImageExtractor#images"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,36">
+      <children xsi:type="editmodel:MethodEditModel" name="TWikiImageExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiImageExtractor#TWikiImageExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImages" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiImageExtractor#getImages()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/ImageExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiImageExtractor" source="//@children.17" target="//@children.7" targetEnd="//@children.17/@sourceConnections.0/@children.1" sourceEnd="//@children.17/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="87,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,81"/>
+      <bendpoints secondRelativeDimension="-24,178" firstRelativeDimension="0,-9"/>
+      <bendpoints secondRelativeDimension="83,178" firstRelativeDimension="107,-9"/>
+      <bendpoints secondRelativeDimension="83,34" firstRelativeDimension="107,-153"/>
+      <bendpoints secondRelativeDimension="0,34" firstRelativeDimension="24,-153"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TWikiLinkExtractor" location="45,586" size="162,153" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="externalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractor#externalLinks"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="internalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractor#internalLinks"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,54">
+      <children xsi:type="editmodel:MethodEditModel" name="TWikiLinkExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractor#TWikiLinkExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getExternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractor#getExternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractor#getInternalLinks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/LinkExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractor" source="//@children.18" target="//@children.2" targetEnd="//@children.18/@sourceConnections.0/@children.1" sourceEnd="//@children.18/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="130,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="33,99"/>
+      <bendpoints secondRelativeDimension="-144,209" firstRelativeDimension="0,-12"/>
+      <bendpoints secondRelativeDimension="-75,209" firstRelativeDimension="69,-12"/>
+      <bendpoints secondRelativeDimension="-75,27" firstRelativeDimension="69,-194"/>
+      <bendpoints secondRelativeDimension="0,27" firstRelativeDimension="144,-194"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TWikiLinkExtractorUsingWikitext" location="227,586" size="249,153" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractorUsingWikitext">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="externalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractorUsingWikitext#externalLinks"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="internalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractorUsingWikitext#internalLinks"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="182,54">
+      <children xsi:type="editmodel:MethodEditModel" name="TWikiLinkExtractorUsingWikitext" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractorUsingWikitext#TWikiLinkExtractorUsingWikitext(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getExternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractorUsingWikitext#getExternalLinks()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInternalLinks" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractorUsingWikitext#getInternalLinks()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/LinkExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiLinkExtractorUsingWikitext" source="//@children.19" target="//@children.2" targetEnd="//@children.19/@sourceConnections.0/@children.1" sourceEnd="//@children.19/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="124,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="48,99"/>
+      <bendpoints secondRelativeDimension="17,209" firstRelativeDimension="0,-12"/>
+      <bendpoints secondRelativeDimension="-86,209" firstRelativeDimension="-103,-12"/>
+      <bendpoints secondRelativeDimension="-86,32" firstRelativeDimension="-103,-189"/>
+      <bendpoints secondRelativeDimension="0,32" firstRelativeDimension="-17,-189"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TWikiTagExtractor" location="707,543" size="158,117" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiTagExtractor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="75,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="tags" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiTagExtractor#tags"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,36">
+      <children xsi:type="editmodel:MethodEditModel" name="TWikiTagExtractor" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiTagExtractor#TWikiTagExtractor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTags" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiTagExtractor#getTags()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="de.tudarmstadt.ukp.dkpro.semantics.wiki.util/TagExtractor&lt;-de.tudarmstadt.ukp.dkpro.semantics.wiki.util.twiki/TWikiTagExtractor" source="//@children.20" target="//@children.6" targetEnd="//@children.20/@sourceConnections.0/@children.1" sourceEnd="//@children.20/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="73,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="84,81"/>
+      <bendpoints secondRelativeDimension="-24,173" firstRelativeDimension="0,-14"/>
+      <bendpoints secondRelativeDimension="86,173" firstRelativeDimension="110,-14"/>
+      <bendpoints secondRelativeDimension="86,35" firstRelativeDimension="110,-152"/>
+      <bendpoints secondRelativeDimension="0,35" firstRelativeDimension="24,-152"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

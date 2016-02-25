@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2010-2016 Ubiquitous Knowledge Processing (UKP) Lab
+    Technische Universität Darmstadt
+   
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+   
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+   
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+ -->
+
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="PageMetadataAEDescriptor">
+      <import location="../annotator/PageMetadataAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TextBlockAEDescriptor">
+      <import location="../annotator/TextBlockAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <analysisEngineMetaData>
+    <name>WikiSnifferAAEDescriptor</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <configurationParameters searchStrategy="language_fallback">
+      <configurationParameter>
+        <name>WikiSyntax</name>
+        <description>The wiki syntax.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/WikiSyntax</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>DocumentTitle</name>
+        <description>The document title.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/DocumentTitle</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>DocumentId</name>
+        <description>The document ID.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/DocumentId</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>DocumentUri</name>
+        <description>The document URI or URL.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/DocumentUri</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>CollectionId</name>
+        <description>The collection ID.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/CollectionId</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>WikiApiUri</name>
+        <description>The URI or URL of the Wiki API.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/WikiApiUri</parameter>
+        </overrides>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>DocumentTitle</name>
+        <value>
+          <string>Beagle</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>DocumentUri</name>
+        <value>
+          <string>http://en.wikipedia.org/wiki/Beagle</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>WikiSyntax</name>
+        <value>
+          <string>MediaWiki</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>WikiApiUri</name>
+        <value>
+          <string>http://en.wikipedia.org/w/api.php</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <flowConstraints>
+      <fixedFlow>
+        <node>PageMetadataAEDescriptor</node>
+        <node>TextBlockAEDescriptor</node>
+      </fixedFlow>
+    </flowConstraints>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.PageMetadata</type>
+        </inputs>
+        <outputs>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.PageMetadata</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.TextBlock</type>
+        </outputs>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

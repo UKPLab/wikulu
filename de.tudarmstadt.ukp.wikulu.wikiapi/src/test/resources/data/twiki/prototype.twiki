@@ -1,0 +1,119 @@
+---+ Prototype
+---++ Open question
+This open questions can also be the question in the user study.
+
+   * How to show link names
+      * The used word in the article (what you see in the article)
+      * The alias name of wiki article (what you see as the link)
+      * The real name of wiki article (if redirection is necessary, the link name is the article name after redirection)
+   * How to show the extracted phrases
+      * As normal text (not link)
+      * As link (link uses wiki search)
+
+---++ Goal
+   * *User friendliness*: how easy to use the user interface
+   * *Simplicity*: keep the user interface as simple as possible
+   * *High learnability*: how easy to learn the interface to accomplish basic task
+   * *High efficiency*: how quickly the user to accomplish the tasks after learning
+   * *Lowest errors*: how many errors do users make, how easy is it for users to recover from these errors
+   * *High memorability*: after a period of non-use, how long does it take the user still remember to use it effectively
+   * *High satisfaction*: how satisfying is the user interface (for normal users and advance users)
+
+---++ Guidelines
+   * Offer informative feedback
+   * Balance user control with automated action
+   * Reduce short-term memory load
+      * Support simple history mechanism
+      * Integration navigation & search
+   * Provide shortcuts for skilled users
+   * Reduce errors; offer simple error handling
+      * Avoid empty result sets
+      * Address the vocabulary problem
+      * Small details
+   * Strive for consistency
+   * Permit easy reversal of actions
+   * Recognize the importance of aesthetic in design
+
+---++ Model of information seeking process
+   * Iteration of information details (summary length)
+   * Browsing as information seeking strategy (browsing VS search)
+   * Integrating navigation with search
+      * Categories for navigating & narrowing
+      * Collapsing & extending contents
+      * Sorting
+   * Small history mechanism
+
+---++ Personalization
+   * User-driven customization
+      * Manual closing the snippet
+      * Keeping snippet opened
+
+---++ To decide
+   * How to show link names
+      * The used word in the article (what you see in the article)
+      * The alias name of wiki article (what you see as the link)
+      * The real name of wiki article (if redirection is necessary, the link name is the article name after redirection)
+   * How to show the extracted phrases
+      * As normal text (not link)
+      * As link (link uses wiki search)
+
+---++ Links
+-- Main.FabianTamin - 27 May 2009
+   * [[%ATTACHURL%/Model_Guideline.htm][Model_Guideline.htm]]: 2009_0527_19:26 -- Guideline for modelling the prototype
+
+   * prototype alternal
+      * 2009_0618_10:21 -- Prototype alternal - sample article: in compact mode (viewing a single article) + minimized sidebar: <br />
+      <img src="%ATTACHURLPATH%/exampli_--_prototype_-_C_mode_mini.png" alt="exampli_--_prototype_-_C_mode_mini.png" width='454' height='361' />
+      * 2009_0618_10:21 -- Prototype alternal - sample article: in compact mode (viewing a single article) + expanded sidebar: <br />
+      <img src="%ATTACHURLPATH%/exampli_--_prototype_-_C_mode.png" alt="exampli_--_prototype_-_C_mode.png" width='617' height='361' />
+      * [[%ATTACHURL%/prototype_-_C_mode.svg][prototype_-_C_mode.svg]]: 2009_0605_14:16 -- Prototype in compact mode (viewing a single article)
+      * [[%ATTACHURL%/prototype_-_V_mode.svg][prototype_-_V_mode.svg]]: 2009_0605_14:16 -- Prototype in visited articles mode (provide history of visited articles in a single page)
+
+   * prototype seider
+      * 2009_0615_02:50 -- Prototype seider - sample article: hidden sidebar: <br />
+      <img src="%ATTACHURLPATH%/exampli_---_prototype_-_navis_hidden.png" alt="exampli_---_prototype_-_navis_hidden.png" width='524' height='420' />
+      * 2009_0615_02:50 -- Prototype seider - sample article: expanded sidebar: <br />
+      <img src="%ATTACHURLPATH%/exampli_---_prototype_-_navis_with_expanded_sidebar.png" alt="exampli_---_prototype_-_navis_with_expanded_sidebar.png" width='698' height='421' />
+      * [[%ATTACHURL%/prototype_-_navis.svg][prototype_-_navis.svg]]: 2009_0605_14:30 -- Prototype in single mode (main frame + sidebar); related articles are categorized
+      * [[%ATTACHURL%/prototype_-_navis_grouped.svg][prototype_-_navis_grouped.svg]]: 2009_0605_14:30 -- Prototype in single mode (main frame + sidebar); related articles are grouped together
+      * [[%ATTACHURL%/prototype_-_navis_redirection.svg][prototype_-_navis_redirection.svg]]: 2009_0605_14:42 -- Prototype in single mode (main frame + sidebar); with redirection title
+
+   * prototype schaltium
+      * 2009_0618_10:24 -- Prototype schaltium - sample article: summary: <br />
+      <img src="%ATTACHURLPATH%/exampli_---_prototype_-_schaltium_-_summary_-_mini_expanded.png" alt="exampli_---_prototype_-_schaltium_-_summary_-_mini_expanded.png" width='455' height='320' />
+      * 2009_0618_10:24 -- Prototype schaltium - sample article: keywords: <br />
+      <img src="%ATTACHURLPATH%/exampli_---_prototype_-_schaltium_-_keywords_-_mini_expanded.png" alt="exampli_---_prototype_-_schaltium_-_keywords_-_mini_expanded.png" width='455' height='320' />
+      * [[%ATTACHURL%/prototype_-_schaltium_-_summary.svg][prototype_-_schaltium_-_summary.svg]]: 2009_0605_22:55 -- Prototype schaltium - summary mode
+      * [[%ATTACHURL%/prototype_-_schaltium_-_table_of_contents.svg][prototype_-_schaltium_-_table_of_contents.svg]]: 2009_0605_22:55 -- Prototype schaltium - table of contents mode
+      * [[%ATTACHURL%/prototype_-_schaltium_-_keywords.svg][prototype_-_schaltium_-_keywords.svg]]: 2009_0605_22:55 -- Prototype schaltium - keywords mode
+      * [[%ATTACHURL%/prototype_-_schaltium_-_related_articles.svg][prototype_-_schaltium_-_related_articles.svg]]: 2009_0605_22:55 -- Prototype schaltium - related articles mode
+      * [[%ATTACHURL%/prototype_-_schaltium_-_external_links.svg][prototype_-_schaltium_-_external_links.svg]]: 2009_0605_22:55 -- Prototype schaltium - external links mode
+      * [[%ATTACHURL%/prototype_-_schaltium_-_tags.svg][prototype_-_schaltium_-_tags.svg]]: 2009_0605_22:55 -- Prototype schaltium - tags mode
+      * [[%ATTACHURL%/prototype_-_schaltium_-_sniffed_articles.svg][prototype_-_schaltium_-_sniffed_articles.svg]]: 2009_0605_22:55 -- Prototype schaltium - sniffed articles mode
+      * [[%ATTACHURL%/prototype_-_schaltium_-_related_articles_subber.svg][prototype_-_schaltium_-_related_articles_subber.svg]]: 2009_0610_18:15 -- Prototype schaltium - related_articles with sub navigation
+      * [[%ATTACHURL%/prototype_-_schaltium_-_summary_-_mini.svg][prototype_-_schaltium_-_summary_-_mini.svg]]: 2009_0610_18:15 -- Prototype schaltium - summary mode (mini version with navigation's arrow)
+      * [[%ATTACHURL%/prototype_-_schaltium_-_summary_-_mini_expanded.svg][prototype_-_schaltium_-_summary_-_mini_expanded.svg]]: 2009_0610_18:15 -- Prototype schaltium - summary mode (mini version with expanded navigation)
+
+   * prototype heibrideisser
+      * 2009_0618_10:28 -- Prototype heibrideisser - sample article: summary minimized footer frame: <br />
+      <img src="%ATTACHURLPATH%/exampli_---_prototype_-_heibrideisser_-_summary_-_mini.png" alt="exampli_---_prototype_-_heibrideisser_-_summary_-_mini.png" width='546' height='320' />
+      * 2009_0610_18:19 -- Prototype heibrideisser - sample article: summary + keywords: <br />
+      <img src="%ATTACHURLPATH%/exampli_---_prototype_-_heibrideisser_-_summary__keywords.png" alt="exampli_---_prototype_-_heibrideisser_-_summary__keywords.png" width='491' height='394' />
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_table_of_contents__keywords.svg][prototype_-_heibrideisser_-_table_of_contents__keywords.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - table of contents + keywords
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__keywords.svg][prototype_-_heibrideisser_-_summary__keywords.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + keywords
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__images.svg][prototype_-_heibrideisser_-_summary__images.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + images
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__related_articles_-all-.svg][prototype_-_heibrideisser_-_summary__related_articles_-all-.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (all)
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__related_articles_-used_by_this-.svg][prototype_-_heibrideisser_-_summary__related_articles_-used_by_this-.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (used by this)
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__related_articles_-using_this-.svg][prototype_-_heibrideisser_-_summary__related_articles_-using_this-.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + related articles (using this)
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__external_links.svg][prototype_-_heibrideisser_-_summary__external_links.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + external links
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__tags.svg][prototype_-_heibrideisser_-_summary__tags.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + tags
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary__sniffed_articles.svg][prototype_-_heibrideisser_-_summary__sniffed_articles.svg]]: 2009_0605_22:55 -- Prototype heibrideisser - summary + sniffed articles
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary.svg][prototype_-_heibrideisser_-_summary.svg]]: 2009_0610_18:19 -- Prototype heibrideisser - summary (hidden footer frame)
+      * [[%ATTACHURL%/prototype_-_heibrideisser_-_summary_-_mini.svg][prototype_-_heibrideisser_-_summary_-_mini.svg]]: 2009_0610_18:19 -- Prototype heibrideisser - summary (hidden footer frame + small window)
+      * [[%ATTACHURL%/exampli_---_prototype_-_heibrideisser_-_summary__keywords.svg][exampli_---_prototype_-_heibrideisser_-_summary__keywords.svg]]: 2009_0610_18:19 -- Prototype heibrideisser - sample article: summary + keywords
+
+   * starting point:
+      * 2009_0618_10:30 -- hovering article's link with schaltium: <br />
+      <img src="%ATTACHURLPATH%/hovering.png" alt="hovering.png" width='733' height='446' />
+      * 2009_0618_10:30 -- opening schaltium snippet with link's dynamic icon: <br />
+      <img src="%ATTACHURLPATH%/iconing.png" alt="iconing.png" width='734' height='446' />

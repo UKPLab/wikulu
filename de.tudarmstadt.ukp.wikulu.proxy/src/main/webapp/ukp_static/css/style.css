@@ -1,0 +1,92 @@
+/* 
+ * Styling for the main UI elements
+ */
+
+
+/* Menu */
+#ukpmenu.yui-panel {
+	font-size: small;
+	font-family: sans-serif;
+	min-width: 450px;
+	position: absolute;
+	left: 300px;
+	top: 0px;
+	margin: 0px;
+}
+
+#ukpmenu.yui-panel .hd {
+	font-size: larger;
+}
+
+#ukpmenu .hd {
+	height: 30px;
+}
+
+#ukpmenu .hd .title {
+	float:left;
+}
+
+#ukp_menu_button_area {
+	min-height:25px;
+}
+
+#ukp_menu_button_area .yui-button {
+	float: left;
+	margin-left: 5px;
+}
+
+#ukp_menu_search {
+	margin-top:10px;
+}
+
+#ukp_busy_indicator {
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin: 7px 2px 2px 50px;
+	background-image: url(/ukp_static/img/ajax-loader.gif);
+}
+
+#ukp_simple_busy_indicator {
+	float: right;
+	width: 12px;
+	height: 12px;
+	
+	
+}
+
+/* Resutls */
+#ukpresults.yui-panel {
+	font-size: small;
+	font-family: sans-serif;
+	width: 60%;
+	margin: 120px auto auto auto;
+}
+
+/* Topic Segmentation */
+.ukp_topic_segment_marker {
+	margin: 5px auto 5px auto;
+	height: 27px;
+	background-color: yellow;
+	clear: both;
+	padding-top: 3px;
+	padding-left: 10px;
+}
+
+/* Text decoration */
+.highlight { background-color: yellow }
+
+/* Content Area */
+#wikulu_content {
+	min-height: 400px;
+}
+
+/* Search */
+#wikulu_extended_search {
+	float:left;
+}
+
+#wikulu_extended_search_results {
+	float:left;
+	margin-left:25px;
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2010-2016 Ubiquitous Knowledge Processing (UKP) Lab
+    Technische Universität Darmstadt
+   
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+   
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+   
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+ -->
+
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>WikiSnifferTypeSystemDescriptor</name>
+  <description/>
+  <version>1.0</version>
+  <vendor/>
+  <imports>
+  	<import name="desc.type.DocumentMetaData"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Heading</name>
+      <description>It represents heading.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>level</name>
+          <description>Heading level.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>text</name>
+          <description>Text of the heading.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Link</name>
+      <description>It represents a link.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>href</name>
+          <description>HREF of the heading (can be relative path or absolute path).</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>text</name>
+          <description>Display text of the link; can be alt text attribute of other definition of text.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.InternalLink</name>
+      <description>It represents an internal wiki link.</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Link</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Tag</name>
+      <description>It represents a tag or a wiki category</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Link</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Backlink</name>
+      <description>It represents a wiki backlink.</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Link</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.PageMetadata</name>
+      <description>It represents a page metadata.</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData</supertypeName>
+      <features>
+        <featureDescription>
+          <name>wikiSyntax</name>
+          <description>Wiki Syntax.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>wikiApiUrl</name>
+          <description>Wiki API URL</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>wikiViewUrl</name>
+          <description>Wiki view url (prepend this to the page id to get the complete URL)</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.ExternalLink</name>
+      <description>It represents an external link.</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Link</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Image</name>
+      <description>It represents an image.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>description</name>
+          <description>Image description.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>href</name>
+          <description>The HREF of the image.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

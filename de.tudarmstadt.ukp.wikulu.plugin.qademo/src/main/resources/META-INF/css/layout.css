@@ -1,0 +1,306 @@
+#answerBox * {
+  font-family: Verdana, Sans-Serif;
+}
+#answerBox a {
+  text-decoration: none;
+}
+#answerBox a:hover,
+#answerBox a:active {
+  text-decoration: underline;
+}
+#answerBox body {
+  background: #fdfdfd;
+}
+#answerBox .page {
+  margin: 28px 35px;
+}
+
+/* -- Header -- */
+#answerBox .topbar {
+  background: #009cda;
+  height: 20px;
+  margin: 0px 0px 1px;
+}
+#answerBox .header { 
+  background: #fdfdfd;
+  color: black;
+  padding: 20px 0px 10px 0px;
+  border-top: black 1px solid;
+  /*border-bottom: black 1px solid;*/
+  height: 150px;
+}
+#answerBox .header .logo {
+  float: right;
+}
+
+#answerBox .header .qa_el_logo{
+	hight: 100px
+}
+
+#answerBox .header .title h1 {
+  font-size: 26pt;
+  font-weight: bold;
+  padding: 2px 290px 0px 0px;
+  line-height: 100%;
+}
+#answerBox .start .header {
+  background: #009cda;
+  color: #fdfdfd;
+  padding: 20px 0px 10px 20px;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  height: 292px;
+}
+#answerBox .start .header .title h1 {
+  padding: 2px 290px 0px 0px;
+}
+
+/* -- Question -- */
+#answerBox .question {
+  font-size: 16pt;
+  font-weight: bold;
+  padding: 25px 10px 10px 0px;
+}
+#answerBox .question input {
+  color: black;
+  font-size: 13pt;
+  font-weight: normal;
+  vertical-align: 0px;
+}
+#answerBox .question input.inputText {
+  width: 400px;
+}
+#answerBox .question input.button {
+  padding: 1px 8px;
+  font-weight: bold;
+}
+#answerBox .start .question {
+  color: white;
+  padding: 100px 10px 10px 0px;
+}
+
+/* -- Start -- */
+#answerBox .start .main {
+  margin: 20px;
+}
+#answerBox .start .main h4 {
+  font-weight: bold;
+  font-size: 16pt;
+  margin: 20px 0px 10px;
+}
+#answerBox .start .main ul {
+  margin: 10px 0px 10px 30px;
+  font-style: italic;
+}
+
+/* -- Process -- */
+#answerBox .process .main .question {
+  font-weight: bold;
+  font-size: 16pt;
+  margin: 20px 0px 10px;
+}
+#answerBox .process .main,
+#answerBox .status p {
+  text-align: center;
+}
+#answerBox .process .main .wait,
+#answerBox .process .main .status,
+#answerBox .process .main .control {
+  text-align: center;
+  margin: 20px 0px 10px;
+}
+#answerBox .process .main .control {
+  font-size: 8pt;
+}
+#answerBox .process .main .control a {
+  color: blue;
+}
+#answerBox .process .main .wait {
+  line-height: 50px;
+}
+#answerBox .process .main .status {
+  border: none;
+}
+
+/* -- Answer -- */
+#answerBox .rightColumn {
+  float: right;
+  width: 250px;
+  color: white;
+  margin: 0px 0px 10px;
+}
+#answerBox .rightColumn h3 {
+  font-weight: bold;
+  font-size: 14pt;
+  margin: 10px 10px 5px;
+}
+#answerBox .rightColumn p {
+  margin: 0px 10px 0px;
+  text-align: center;
+}
+#answerBox .rightColumn .smallButton,
+#answerBox .rightColumn .smallButton a {
+  font-size: 8pt;
+  font-weight: normal;
+  color: white;
+}
+#answerBox .rightColumn ul {
+  margin: 0px;
+  list-style-type: none;
+}
+#answerBox .rightColumn ul li {
+  padding: 1px 5px;
+  margin: 1px 5px;
+}
+#answerBox .rightColumn ul li.enabled {
+  background: #6f6;
+}
+#answerBox .rightColumn ul li.enabled a {
+  color: black;
+}
+#answerBox .rightColumn ul li a {
+  color: white;
+  text-decoration: none;
+}
+#answerBox .rightColumn ul li a:hover {
+  text-decoration: underline;
+}
+#answerBox .rightColumn #topicList,
+#answerBox .rightColumn #sourceList,
+#answerBox .rightColumn #views {
+  border-bottom: black 1px solid;
+  padding-bottom: 7px;
+}
+
+.main {
+  background: transparent url(/plugins/img/topics.gif) top right repeat-y;
+}
+#answerBox .mainColumn {
+  margin-right: 270px;  
+}
+
+#answerBox #topicHeader,
+#answerBox #query {
+  font-weight: bold;
+  font-size: 16pt;
+  margin: 0px 0px 5px;
+  padding-top: 20px;
+}
+
+#answerBox #textView .sentenceText a {
+  color: black; 
+  text-decoration: none;
+}
+#answerBox #textView .sentenceText a:hover {
+  background: #ffc;
+  background: #def; 
+}
+#answerBox #textView .sentenceDetail,
+#answerBox #listView .nGramDetailItem,
+#answerBox #linkView .linkDetail {
+  background: #def;
+  padding: 5px;
+  margin: 10px 0px;
+  font-size: 11pt;
+}
+#answerBox #textView .sentenceDetailContext,
+#answerBox #listView .nGramDetailContext,
+#answerBox #linkView .linkDetailContext {
+  font-style: italic;
+}
+#textView .sentenceDetailContext .current,
+#listView .nGramDetailContext .current,
+#linkView .linkDetailContext .current {
+  font-weight: bold;
+}
+#textView .sentenceDetailTopic, 
+#textView .sentenceDetailSource,
+#listView .nGramDetailTopic,
+#listView .nGramDetailSource,
+#linkView .linkDetailTopic,
+#linkView .linkDetailSource {
+  font-weight: bold;
+}
+#textView .sentenceDetailTopic *, 
+#textView .sentenceDetailSource *,
+#listView .nGramDetailTopic *,
+#listView .nGramDetailSource *,
+#linkView .linkDetailTopic *,
+#linkView .linkDetailSource * {
+  font-weight: normal;
+} 
+#textView .sentenceDetailSource a,
+#listView .nGramDetailSource a,
+#linkView .linkDetailSource a {
+  text-decoration: underline;
+}
+#listView p,
+#linkView p {
+  margin: 0px;
+  padding: 0px 0px 0px 20px;
+  background: url(/plugins/img/arrow.gif) 0px 0px no-repeat;
+}
+#linkView .follow {
+  color: blue;
+  font-size: 8pt;
+}
+#answerBox em {
+  font-style: normal;
+}
+#answerBox .highlight1 {
+  background: yellow;
+}
+#answerBox .highlight2 {
+  background: magenta;
+}
+#answerBox .highlight3 {
+  background: lime;
+}
+
+#answerBox .homeLink {
+  float: right;
+  width: 250px;
+  color: white;
+  margin: 10px 0px 0px;
+  font-size: 8pt;
+  text-align: center;
+}
+
+#answerBox .homeLink a {
+  color: white;
+  text-decoration: none;
+  /*font-weight: bold;*/
+  padding: 0px;
+}
+
+/*
+.topicEntry {
+  padding-bottom: 10px;
+}
+.topicEntry .topicLabel {
+  font-weight: bold;
+  font-size: 16pt;
+  margin: 20px 0px 5px;
+}
+*/
+
+
+/* -- Footer -- */
+#answerBox .footer {
+  font-size: 9pt;
+  text-align: left;
+  padding: 10px 0px;
+  border-top: black 1px solid;
+}
+#answerBox .footer .logo {
+  float: right;
+}
+#answerBox .footer a {
+  background: transparent;
+  color: #00c;
+}
+
+#answerBox a {
+  background: transparent;
+  color: #00c;
+}

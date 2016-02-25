@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2010-2016 Ubiquitous Knowledge Processing (UKP) Lab
+    Technische Universität Darmstadt
+   
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+   
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+   
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+ -->
+
+<!--<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>WikiProxy</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>/axis2-web/index.jsp</welcome-file>
+	</welcome-file-list>
+	<filter>
+		<filter-name>InjectionFilter</filter-name>
+		<filter-class>de.tudarmstadt.ukp.wikiproxy.InjectionFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>InjectionFilter</filter-name>
+		<servlet-name>InjectionServiceServlet</servlet-name>
+	</filter-mapping> 
+	 <servlet>
+		<description></description>
+		<display-name>Injection Service Servlet</display-name>
+		<servlet-name>InjectionServiceServlet</servlet-name>
+		<servlet-class>de.tudarmstadt.ukp.wikiproxy.InjectionService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InjectionServiceServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping> 
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/ukp_static/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>DWR Servlet</display-name>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<display-name>Apache-Axis Servlet</display-name>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>
+		org.apache.axis2.transport.http.AxisServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>Apache-Axis Admin Servlet Web Admin</display-name>
+		<servlet-name>AxisAdminServlet</servlet-name>
+		<servlet-class>
+		org.apache.axis2.transport.http.AxisAdminServlet</servlet-class>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dwr-invoker</servlet-name>
+		<url-pattern>/ukp_dwr/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisAdminServlet</servlet-name>
+		<url-pattern>/axis2-admin/*</url-pattern>
+	</servlet-mapping>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/axis2-web/Error/error404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/axis2-web/Error/error500.jsp</location>
+	</error-page>
+	<servlet>
+		<servlet-name>plugin-js-servlet</servlet-name>
+		<servlet-class>de.tudarmstadt.ukp.wikulu.util.PluginJSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>plugin-js-servlet</servlet-name>
+		<url-pattern>/plugins/js/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>plugin-css-servlet</servlet-name>
+		<servlet-class>de.tudarmstadt.ukp.wikulu.util.PluginCSSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>plugin-css-servlet</servlet-name>
+		<url-pattern>/plugins/css/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>plugin-img-servlet</servlet-name>
+		<servlet-class>de.tudarmstadt.ukp.wikulu.util.PluginImgServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>plugin-img-servlet</servlet-name>
+		<url-pattern>/plugins/img/*</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>

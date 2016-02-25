@@ -1,0 +1,330 @@
+.ws_drag_dialog > * {
+	text-align: left;	
+}
+
+.ws_drag_dialog {
+	width: 350px;
+	border: solid;
+	border-width: thin;
+	border-color: #aaaaaa;
+	position: absolute;
+	z-index: 100;
+	font-family: verdana;
+	font-size: 11px;
+	background-color: white;
+}
+
+.ws_frame {
+	background: #cccccc/*{bgColorHeader}*/ url(/ukp_static/img/wikisniffer/ui-bg_highlight-soft_75_cccccc_1x100.png)/*{bgImgUrlHeader}*/ 50%/*{bgHeaderXPos}*/ 50%/*{bgHeaderYPos}*/ repeat-x/*{bgHeaderRepeat}*/;
+	cursor: move;
+}
+
+.ws_title {
+	font-size: 110%;
+	font-weight: bold;
+	padding-left: 4px;
+	color: blue;
+	text-shadow: 0px 1px 0px #e5e5e5;
+	padding-right: 16px;
+	padding-left: 8px;
+}
+
+.ws_buttons {
+	/*float: right;*/	
+	background-color: transparent;
+	border-collapse: collapse;
+}
+
+.ws_buttons_skin {
+	/*float: right;*/
+	width: 35px;
+	background-color: transparent; 
+}
+
+.ws_close_button {
+	background: url(/ukp_static/img/wikisniffer/close.png) no-repeat;
+	background-position: 50% 50%;
+	min-width: 18px;
+	height: 18px;
+	width: 18px;
+	cursor: pointer;
+}
+
+.ws_hold_button {
+	min-width: 18px;
+	height: 18px;
+	width: 18px;
+	cursor: pointer;
+}
+
+.ws_autoclose_on {
+	background: url(/ukp_static/img/wikisniffer/unlock.png) no-repeat;
+	background-position: 50% 50%;
+}
+
+.ws_autoclose_off {
+	background: url(/ukp_static/img/wikisniffer/lock.png) no-repeat;
+	background-position: 50% 50%;
+}
+
+.ws_collapse_button {
+	min-width: 18px;
+	height: 18px;
+	width: 18px;
+	cursor: pointer;
+}
+
+.ws_autocollapse_on {
+	background: url(/ukp_static/img/wikisniffer/collapsed.png) no-repeat;
+	background-position: 50% 50%;
+}
+
+.ws_autocollapse_off {
+	background: url(/ukp_static/img/wikisniffer/uncollapsed.png) no-repeat;
+	background-position: 50% 50%;
+}
+
+.ws_displayed_content {
+	padding: 4px 4px 4px 4px;
+	margin: 0px 4px 0px 4px;
+	max-height: 200px;
+	overflow: auto;
+	border-width: thin;
+	border-color: #aaaaaa;
+	border-style: solid;
+	border-left-style: none;
+	border-right-style:none;
+}
+
+.ws_switched_contents {
+	display: none;
+}
+
+.ws_switcher_nav {
+	cursor:pointer;
+	color: blue;
+}
+
+.ws_switcher_sub_nav {
+	font-style: italic;
+	cursor: default;
+}
+
+.ws_switcher_even_nav {
+}
+
+.ws_switcher_odd_nav {
+	background-color: #e1e1e1
+}
+
+
+.ws_selectable {
+	padding:3px 4px 3px 2px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #ffffff;
+}
+
+.ws_selectable:hover {
+	color: #ffffff;
+	background-color: #0066CC;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000099;
+}
+
+.ws_selected_content {
+	display: block;
+}
+
+.ws_empty_result {
+	font-style: italic;
+	padding: 4px;
+}
+
+.ws_unselected_content {
+	display: none;
+}
+
+.ws_tags {
+	text-align: center;
+	padding: 10px;
+}
+
+.ws_keyphrases_title {
+	text-align: center;
+	background: #cccccc/*{bgColorHeader}*/ url(/ukp_static/img/wikisniffer/ui-bg_highlight-soft_75_cccccc_1x100.png)/*{bgImgUrlHeader}*/ 50%/*{bgHeaderXPos}*/ 50%/*{bgHeaderYPos}*/ repeat-x/*{bgHeaderRepeat}*/;
+	color: black;
+	height: 15px
+}
+
+.ws_tags_toggle {
+	color: #7777cc;
+	cursor: pointer;
+	text-decoration: underline;
+	padding-left: 4px;
+	padding-right: 4px
+}
+
+.ws_extra_summary_toggle {
+	color: #7777cc;
+	cursor: pointer;
+	text-decoration: underline;
+	padding-left: 4px;
+	padding-right: 4px
+}
+
+.ws_keyphrases_toggle {
+	color: blue;
+	cursor: pointer;
+}
+
+.ws_keyphrases {
+	margin-top: 0.3em;
+	border-width: thin;
+	border: 1px solid #aaaaaa;
+	text-shadow: 0px 1px 0px #e5e5e5;
+}
+
+.ws_keyphrases_content {
+	text-align: center;
+	padding: 4px;
+}
+
+a.ws_keyphrase:visited {
+	color: #804000;
+}
+
+a.ws_keyphrase:link {
+	color: #804000;
+}
+
+.ws_more_action_menu {
+	display: none;
+	position: absolute;
+	z-index:3;
+	/*background-color: #fff0f0;*/
+	background-color: #ffffff;
+	padding: 2px;
+	border: solid;
+	border-width: thin;
+	border-color: #aaaaaa;
+}
+
+.ws_visited {
+	display: none;
+}
+
+.ws_selected_nav {
+	color: black;
+	font-weight: bold;
+}
+
+
+.ws_loading_img{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-right: 32px;
+	padding-bottom: 32px;
+	background: url(/ukp_static/img/wikisniffer/bigrotation2.gif) center right no-repeat;
+}
+
+.ws_loading{
+	border: solid;
+	border-width: thin;
+	border-color: silver;
+	
+}
+
+.ws_loading_text{
+	height: 35px;
+	margin-left: 60px;
+	margin-top: 18px;
+		
+}
+
+.ws_loading_text:after{
+	clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+
+/*
+.ws_progressbar {
+	height: 10px;
+}
+
+
+.ws_progressbar_skin {
+	padding-top: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 12px;
+	text-decoration: blink;
+}
+*/
+
+.ui-progressbar-value {
+	background-image: url(/ukp_static/img/wikisniffer/pbar-ani.gif);
+}
+
+/*
+.ws_progressbar_skin {
+	background-image: url(/ukp_static/img/wikisniffer/bigrotation2.gif);
+	background-position: 30% 50%;
+	background-repeat: no-repeat;
+}
+*/
+
+.ws_external_link_item { 
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	background-color: transparent;
+	background-image: url(/ukp_static/img/wikisniffer/external.png);
+	padding-top: 0;
+	padding-right: 13px;
+	padding-bottom: 0;
+}
+
+td.tooltip_autoclose span {
+	display:none;
+	padding:2px 3px;
+	top:-22px;
+	left:-1px;
+	text-shadow: 0px 1px 0px #e5e5e5;
+}
+/*td.tooltip_autoclose:hover span{display:inline; position:absolute; background:#ffffff; border:1px solid #aaaaaa; color:#1c1c1c;}*/
+
+td.tooltip_close span {
+	display:none;
+	padding:2px 3px;
+	top:-22px;
+	left:-1px;
+	text-shadow: 0px 1px 0px #e5e5e5;
+}
+/*td.tooltip_close:hover span{display:inline; position:absolute; background:#ffffff; border:1px solid #aaaaaa; color:#1c1c1c;}*/
+
+a.tooltip_title span {
+	display:none;
+	padding:2px 3px;
+	top:-22px;
+	left:-1px;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+}
+/*a.tooltip_title:hover span{display:inline; position:absolute; background:#ffffff; border:1px solid #aaaaaa; color:#1c1c1c;}*/
+
+/*---------------*/
+
+/*
+.ws_loading_table {
+	width: 100%;
+	text-align: center;
+}
+*/

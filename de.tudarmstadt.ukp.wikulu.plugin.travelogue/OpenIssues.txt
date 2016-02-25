@@ -1,0 +1,2 @@
+1. GoogleMaps Standart Marker durch numerierte Marker ersetzen
+2. LocationText Positionen umrechnen von Plain auf HTML text

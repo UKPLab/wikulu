@@ -1,0 +1,197 @@
+/* Style for words that was found by SuggestLinks*/
+.wikiLinkText{
+	background-color: #1BE968;
+}
+
+
+.wikiSuggestLink{
+	border-style: solid;
+	border-width: 1px;
+	
+}
+
+/* Style for added image in SuggestLinks*/
+.wikiLink{
+	padding-right:15px;
+	background:url(/ukp_static/img/addlink.png) center right no-repeat;
+	cursor:pointer;
+}
+
+.wikiSuggestLinkHover{
+	background-color: yellow;
+}
+
+
+
+.sl_drag_dialog{
+	width: 570px;
+	border: solid;
+	border-width: thin;
+	border-color: #aaaaaa;
+	position: absolute;
+	z-index: 100;
+	font-family: verdana;
+	font-size: 11px;
+	background-color: white;
+	text-align: left;
+}
+
+.sl_appended_sniffer {
+	width: 350px;
+	border-left-style: solid;
+	border-left-width: thin;
+	border-left-color: #aaaaaa;
+	z-index: 100;
+	font-family: verdana;
+	font-size: 11px;
+	background-color: white;
+}
+
+.sl_keyphrases {
+	margin-top: 0.3em;
+	text-shadow: 0px 1px 0px #e5e5e5;
+}
+
+
+.sl_title{
+	font-size: 110%;
+	font-weight: bold;
+	padding-left: 4px;
+	color: blue;
+	text-shadow: 0px 1px 0px #e5e5e5;
+	padding-right: 16px;
+	padding-left: 8px;
+
+}
+
+.sl_links{
+	/*position: relative;
+	right: 1px;*/
+	float: left;
+	width: 210px;
+}
+
+.sl_content{
+	/*position: relative;
+	right: 209px;*/
+	/*margin-right: 1px;
+	float: right;
+	width: 350px;*/
+	width: auto;
+	height: auto;
+    padding: 0px 0px 0px 217px;
+    margin: 0px;
+    background-color: #F9F9F9;	
+}
+
+
+.sl_content:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+
+.sl_content_frame{
+	border: solid;
+	border-width: thin;
+	border-color: silver;
+}
+
+
+.sl_loading{
+	border: solid;
+	border-width: thin;
+	border-color: silver;
+}
+
+
+.sl_sugglinks_right_block{
+	float: right;	
+}
+
+/*Links in popup*/
+a.sl_sugg_links{
+	
+	padding-right:15px;
+	background-color:transparent;
+	background:url(/ukp_static/img/external.png) center right no-repeat;
+	cursor:pointer;
+	
+}
+
+a.sl_sugg_links:hover{
+	
+	padding-right:15px;
+	background-color:transparent;
+	background-image:url('/ukp_static/img/external-hover.png');
+	background-repeat:no-repeat;
+	background-position:center right;
+	cursor:pointer;
+	
+}
+
+
+/***************/
+
+/*View block in popup*/
+.sl_sugg_links_view{
+	cursor:pointer;
+	color:#3A3AFF;
+}
+
+.sl_sugg_links_view_choosed{
+	cursor:pointer;
+	color:#0000FF;
+	font-weight: bold;
+}
+
+.sl_sugg_links_view:hover{
+	color:#235BD9;
+	text-decoration:underline;
+}
+
+.sl_sugg_links_view:visited{
+	color:#FFFFFF;
+}
+/***************/
+
+
+/*Add block in popup*/
+.sl_sugg_links_add{
+	
+	padding-right: 30px;
+	padding-top: 2px;
+	background:url(/ukp_static/img/confirm_new.png) center right no-repeat;
+	cursor:pointer;
+}
+
+.sl_sugg_links_add:hover{
+	
+	padding-right: 30px;
+	padding-top: 2px;
+	background:url(/ukp_static/img/confirmed2.png) center right no-repeat;
+	cursor:pointer;
+}
+
+.sl_sugg_links_add:visited{
+	
+	padding-right: 30px;
+	padding-top: 2px;
+	background:url(/ukp_static/img/confirmed2.png) center right no-repeat;
+	cursor:pointer;
+}
+/***************/
+
+
+.sl_sugg_links_block{
+	padding-top: 5px;
+
+}
+
+.sl_visited {
+	display: none;
+}
+

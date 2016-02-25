@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2010-2016 Ubiquitous Knowledge Processing (UKP) Lab
+    Technische Universität Darmstadt
+   
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+   
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+   
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+ -->
+
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="ImageAEDescriptor">
+      <import location="../annotator/ImageAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="HeadingAEDescriptor">
+      <import location="../annotator/HeadingAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TagAEDescriptor">
+      <import location="../annotator/TagAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="BacklinkAEDescriptor">
+      <import location="../annotator/BacklinkAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="PageMetadataAEDescriptor">
+      <import location="../annotator/PageMetadataAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="HTMLTextBlockAEDescriptor">
+      <import location="../annotator/HTMLTextBlockAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="LinkAEDescriptor">
+      <import location="../annotator/LinkAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <analysisEngineMetaData>
+    <name>WikiSnifferAAEDescriptor</name>
+    <description>This analysis engines combines several annotators for supporting the main features of Wiki-Sniffer.</description>
+    <version>1.0</version>
+    <vendor/>
+    <configurationParameters searchStrategy="language_fallback">
+      <configurationParameter>
+        <name>WikiSyntax</name>
+        <description>The wiki syntax.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/WikiSyntax</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>DocumentTitle</name>
+        <description>The document title.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/DocumentTitle</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>DocumentId</name>
+        <description>The document ID.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/DocumentId</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>DocumentUri</name>
+        <description>The document URI or URL.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/DocumentUri</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>CollectionId</name>
+        <description>The collection ID.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/CollectionId</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>WikiApiUri</name>
+        <description>The URI or URL of the Wiki API.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>PageMetadataAEDescriptor/WikiApiUri</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>enableHeadings</name>
+        <description>Whether the heading feature should be enabled.</description>
+        <type>Boolean</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>HeadingAEDescriptor/isEnabled</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>enableLinks</name>
+        <description>Whether the link feature should enabled.</description>
+        <type>Boolean</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>LinkAEDescriptor/isEnabled</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>enableBacklinks</name>
+        <description>Whether backlink feature should be enabled.</description>
+        <type>Boolean</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>BacklinkAEDescriptor/isEnabled</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>enableImages</name>
+        <description>Whether image feature should be enabled.</description>
+        <type>Boolean</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>ImageAEDescriptor/isEnabled</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>backlinksSource</name>
+        <description>The source of the backlink annotator.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>BacklinkAEDescriptor/source</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>backlinksLimit</name>
+        <description>The maximal number of backlinks should be returned </description>
+        <type>Integer</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>BacklinkAEDescriptor/limit</parameter>
+        </overrides>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>DocumentTitle</name>
+        <value>
+          <string>Beagle</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>DocumentUri</name>
+        <value>
+          <string>http://en.wikipedia.org/wiki/Beagle</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>WikiSyntax</name>
+        <value>
+          <string>MediaWiki</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>WikiApiUri</name>
+        <value>
+          <string>http://en.wikipedia.org/w/api.php</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>enableHeadings</name>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>enableLinks</name>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>enableBacklinks</name>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>enableImages</name>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>backlinksSource</name>
+        <value>
+          <string>wikiapi</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>backlinksLimit</name>
+        <value>
+          <integer>50</integer>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <flowConstraints>
+      <fixedFlow>
+        <node>PageMetadataAEDescriptor</node>
+        <node>HeadingAEDescriptor</node>
+        <node>LinkAEDescriptor</node>
+        <node>TagAEDescriptor</node>
+        <node>HTMLTextBlockAEDescriptor</node>
+        <node>BacklinkAEDescriptor</node>
+        <node>ImageAEDescriptor</node>
+      </fixedFlow>
+    </flowConstraints>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.PageMetadata</type>
+        </inputs>
+        <outputs>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Heading</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Link</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.InternalLink</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.ExternalLink</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Tag</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.PageMetadata</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.HTMLTextBlock</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Backlink</type>
+          <type allAnnotatorFeatures="true">de.tudarmstadt.ukp.dkpro.semantics.wiki.type.Image</type>
+        </outputs>
+        <inputSofas>
+          <sofaName>html</sofaName>
+        </inputSofas>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+  <sofaMappings>
+    <sofaMapping>
+      <componentKey>HTMLTextBlockAEDescriptor</componentKey>
+      <componentSofaName>html</componentSofaName>
+      <aggregateSofaName>html</aggregateSofaName>
+    </sofaMapping>
+    <sofaMapping>
+      <componentKey>ImageAEDescriptor</componentKey>
+      <componentSofaName>html</componentSofaName>
+      <aggregateSofaName>html</aggregateSofaName>
+    </sofaMapping>
+    <sofaMapping>
+      <componentKey>LinkAEDescriptor</componentKey>
+      <componentSofaName>html</componentSofaName>
+      <aggregateSofaName>html</aggregateSofaName>
+    </sofaMapping>
+  </sofaMappings>
+</analysisEngineDescription>

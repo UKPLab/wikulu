@@ -1,0 +1,2 @@
+The '''EditorX''' is an [[text editor|editor]] of small to '''medium'''-sized [[text]].
+<nowiki>This is a [[test]] too ('''yes''')</nowiki>.

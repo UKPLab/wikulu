@@ -1,0 +1,15 @@
+.qafont {
+	font-family: 'Merriweather', arial, serif;
+	font-size: 12px;
+}
+
+.qaSampleQuestions {
+	color: #2E6E9E;
+	cursor: pointer;
+}
+
+p#qademo {
+	font-family: 'Merriweather', arial, serif;
+	font-size: 28px;
+	font-weight: bold;
+}
